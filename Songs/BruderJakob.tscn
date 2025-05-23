@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b8a7rge6iayft"]
+
+[node name="Label" type="Label"]
+text = "Hier lernst du Bruder Jacob
+
+"

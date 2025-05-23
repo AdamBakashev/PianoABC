@@ -1,0 +1,111 @@
+[gd_scene load_steps=10 format=3 uid="uid://cwtjdh0lo2lep"]
+
+[ext_resource type="Script" uid="uid://cale2t3bvt52q" path="res://Skripte/learn_mode.gd" id="1_im8dy"]
+[ext_resource type="Texture2D" uid="uid://c6f540o2avgpm" path="res://Bilder/sammlung-von-musiknoten_23-2151543919.png" id="2_25pba"]
+[ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_u3gn0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kuh7n"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qak4o"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ma8qk"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_341hf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i157"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_akvkb"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="LearnModeRoot" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_im8dy")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_right = 1154.0
+offset_bottom = 667.0
+texture = ExtResource("2_25pba")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 34.0
+offset_right = 814.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 46
+text = "Wähle ein Lied zum Lernen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -25.0
+offset_top = 77.0
+offset_right = 1118.0
+offset_bottom = 476.0
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_colors/font_color = Color(0.0745098, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_kuh7n")
+text = "Alle meine Entchen 
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0196078, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_qak4o")
+text = "Bruder Jakob "
+
+[node name="Button3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_ma8qk")
+text = "Happy Birthday "
+
+[node name="Button4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_341hf")
+text = "Hänschen Klein "
+
+[node name="Button5" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxFlat_2i157")
+text = "Twinkle Twinkle little Star "
+
+[node name="ZurückZumHauptmenü" type="Button" parent="."]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 469.0
+offset_right = 881.0
+offset_bottom = 534.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_u3gn0")
+theme_override_font_sizes/font_size = 53
+theme_override_styles/normal = SubResource("StyleBoxFlat_akvkb")
+text = "Zurück zum Hauptmenü"
