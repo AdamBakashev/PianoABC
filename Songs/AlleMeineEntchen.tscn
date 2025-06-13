@@ -1,71 +1,549 @@
-[gd_scene format=3 uid="uid://bhfugufa8by3n"]
+[gd_scene load_steps=121 format=3 uid="uid://bhfugufa8by3n"]
 
-[node name="Node2D" type="Control"]
+[ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="1_ayvts"]
+[ext_resource type="Script" uid="uid://dmp88vph5y5yk" path="res://Songs/alleMeineEntchen.gd" id="1_x4rvq"]
+[ext_resource type="Texture2D" uid="uid://bd72ko2ppte83" path="res://Bilder/Notentafel.png" id="2_6em52"]
+[ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_vop05"]
+[ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="2_x4rvq"]
+[ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="3_70iln"]
+[ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="4_vop05"]
+[ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="5_3fda3"]
+[ext_resource type="AudioStream" uid="uid://d1nhe6i7kirkp" path="res://Sound/piano-note-b4-bright-one-shot_100bpm_B_minor.wav" id="6_5o2dv"]
+[ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="6_70iln"]
+[ext_resource type="Texture2D" uid="uid://dfe643fgvgvt5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks1.png" id="11_l7rnd"]
+[ext_resource type="Texture2D" uid="uid://df6fwv86jnn4t" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks2.png" id="12_caaxv"]
+[ext_resource type="Texture2D" uid="uid://dfdf182f322e0" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks3.png" id="13_drujh"]
+[ext_resource type="Texture2D" uid="uid://b1fdmbeu0v58" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks4.png" id="14_y1lwf"]
+[ext_resource type="Texture2D" uid="uid://butqsjpfba26n" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks5.png" id="15_w6c5t"]
+[ext_resource type="Texture2D" uid="uid://de8jiu1miowu5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks6.png" id="16_6nquf"]
+[ext_resource type="Texture2D" uid="uid://cx15pxkmnp47r" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks7.png" id="17_pdj0y"]
+[ext_resource type="Texture2D" uid="uid://b0gxqe83v0v62" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks8.png" id="18_jo76f"]
+[ext_resource type="Texture2D" uid="uid://bij41k6o0t0yb" path="res://Bilder/Projekt Klavierspiel/Notentafel/NotentafelNote1.png" id="19_a17yj"]
+[ext_resource type="Texture2D" uid="uid://cigb0ib2cc4ii" path="res://Bilder/Projekt Klavierspiel/Eule/EulenNeutral.png" id="20_3nufd"]
+[ext_resource type="Texture2D" uid="uid://ea52k5iucxw6" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige2.png" id="21_mgtn2"]
+[ext_resource type="Texture2D" uid="uid://b36cp42p4mmvh" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige3.png" id="22_tielr"]
+[ext_resource type="Texture2D" uid="uid://i77047qt8axf" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige4.png" id="23_rglo4"]
+[ext_resource type="Texture2D" uid="uid://c5fkmi6jov1ce" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige5.png" id="24_xwk1q"]
+[ext_resource type="Texture2D" uid="uid://bq3jpcty73h7v" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige6.png" id="25_87keu"]
+[ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="26_hyyo0"]
+[ext_resource type="Texture2D" uid="uid://bvdieuocopw7g" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige8.png" id="27_k1skw"]
+[ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="28_l7rnd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3fda3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5o2dv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yvoh8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_issgt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wjnn3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u4wdv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43ofw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dh05n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vwm5y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y14u5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vop05"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csyqo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bj44o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tbv8v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bygnb"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8kjgp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w6lby"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gg56k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6em52"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l7rnd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_caaxv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_drujh"]
+
+[sub_resource type="FontVariation" id="FontVariation_vop05"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8kjgp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y1lwf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w6c5t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6nquf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pdj0y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jo76f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a17yj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3nufd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mgtn2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tielr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rglo4"]
+
+[sub_resource type="FontVariation" id="FontVariation_3fda3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xwk1q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_87keu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hyyo0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k1skw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7d4yn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kutf5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c3uaw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fv7ja"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2l21f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtk00"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0puqy"]
+
+[sub_resource type="FontVariation" id="FontVariation_5o2dv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_025nw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3crd0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vkrsh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1bpa3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70yx8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8xacc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ta22"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wk5ii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ig4m8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqnlq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lmsnb"]
+
+[sub_resource type="FontVariation" id="FontVariation_yvoh8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3g7ye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwvcj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2fulx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mrov7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dyxqr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oa6br"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cfrgd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ro58d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7rb61"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d3y70"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_12301"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8ib3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6k8ek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l7q3u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g5d85"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1r2e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_adub7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8nqaf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y50sw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtusv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0o26u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kd4sc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6vidi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jsujs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n1qfv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ff2wh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rftff"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8uxj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6udul"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8x7t5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4ud6a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vof1l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45spr"]
+
+[node name="AlleMeineEntschen" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 8.0
 offset_bottom = 8.0
 scale = Vector2(0.506561, 0.998131)
+script = ExtResource("1_x4rvq")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 156.0
-offset_top = 296.0
-offset_right = 316.0
-offset_bottom = 336.0
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(10.6522, 7.83048)
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 2278.0
+offset_bottom = 603.0
+texture = ExtResource("2_6em52")
+expand_mode = 1
+metadata/_edit_lock_ = true
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
-layout_mode = 2
+[node name="AussehenKlavier" type="Sprite2D" parent="."]
+position = Vector2(1139.05, 278.145)
+scale = Vector2(1.89832, 0.348628)
+texture = ExtResource("2_vop05")
+metadata/_edit_lock_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Taste C" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="Key_C" type="Button" parent="."]
+layout_mode = 0
+offset_left = 325.726
+offset_top = 326.61
+offset_right = 582.726
+offset_bottom = 463.61
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3fda3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5o2dv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yvoh8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_issgt")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_wjnn3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_u4wdv")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_43ofw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_dh05n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vwm5y")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_y14u5")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vop05")
 text = "C"
 
-[node name="Taste D" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C"]
+stream = ExtResource("1_ayvts")
+
+[node name="Key_D" type="Button" parent="."]
+layout_mode = 0
+offset_left = 558.669
+offset_top = 329.616
+offset_right = 724.669
+offset_bottom = 466.616
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_csyqo")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_bj44o")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tbv8v")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_bygnb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_8kjgp")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w6lby")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gg56k")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_6em52")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l7rnd")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_caaxv")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_drujh")
 text = "D"
 
-[node name="Taste E" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_D"]
+stream = ExtResource("2_x4rvq")
+
+[node name="Key_E" type="Button" parent="."]
+layout_mode = 0
+offset_left = 677.115
+offset_top = 327.612
+offset_right = 946.115
+offset_bottom = 464.612
+theme_override_fonts/font = SubResource("FontVariation_vop05")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8kjgp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_y1lwf")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_w6c5t")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_6nquf")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_pdj0y")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jo76f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_a17yj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_3nufd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mgtn2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_tielr")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_rglo4")
 text = "E"
 
-[node name="Taste F" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_E"]
+stream = ExtResource("3_70iln")
+
+[node name="Key_F" type="Button" parent="."]
+layout_mode = 0
+offset_left = 870.576
+offset_top = 322.603
+offset_right = 1152.58
+offset_bottom = 459.603
+theme_override_fonts/font = SubResource("FontVariation_3fda3")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xwk1q")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_87keu")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hyyo0")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_k1skw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_7d4yn")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kutf5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c3uaw")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fv7ja")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2l21f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_mtk00")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_0puqy")
 text = "F"
 
-[node name="Taste G" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_F"]
+stream = ExtResource("4_vop05")
+
+[node name="Key_G" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1085.75
+offset_top = 325.609
+offset_right = 1389.75
+offset_bottom = 462.609
+theme_override_fonts/font = SubResource("FontVariation_5o2dv")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_025nw")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3crd0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_vkrsh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_1bpa3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_70yx8")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8xacc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ta22")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wk5ii")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ig4m8")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_eqnlq")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_lmsnb")
 text = "G"
 
-[node name="Taste A" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_G"]
+stream = ExtResource("6_70iln")
+
+[node name="Key_A" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1287.11
+offset_top = 325.609
+offset_right = 1636.11
+offset_bottom = 462.609
+theme_override_fonts/font = SubResource("FontVariation_yvoh8")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3g7ye")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_uwvcj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2fulx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_mrov7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_dyxqr")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_oa6br")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_cfrgd")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ro58d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7rb61")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_d3y70")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_12301")
 text = "A"
 
-[node name="Taste H" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "H"
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
+stream = ExtResource("5_3fda3")
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
+[node name="Key_B" type="Button" parent="."]
+layout_mode = 0
+offset_left = 3430.98
+offset_top = 652.219
+offset_right = 3701.98
+offset_bottom = 789.219
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s8ib3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6k8ek")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_l7q3u")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_g5d85")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_w1r2e")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_adub7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_8nqaf")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_y50sw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gtusv")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_0o26u")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kd4sc")
+text = "B "
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(50, 50)
-layout_mode = 2
-size_flags_stretch_ratio = 1.11
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+stream = ExtResource("6_5o2dv")
+
+[node name="NotenzettelLinks1" type="Sprite2D" parent="."]
+position = Vector2(507.622, 241.639)
+scale = Vector2(1.34173, 1.08628)
+texture = ExtResource("11_l7rnd")
+
+[node name="NotenzettelLinks2" type="Sprite2D" parent="."]
+position = Vector2(713.432, 242.139)
+scale = Vector2(1.1817, 1.12339)
+texture = ExtResource("12_caaxv")
+
+[node name="NotenzettelLinks3" type="Sprite2D" parent="."]
+position = Vector2(856.758, 255.477)
+scale = Vector2(1.14273, 1.12321)
+texture = ExtResource("13_drujh")
+
+[node name="NotenzettelLinks4" type="Sprite2D" parent="."]
+position = Vector2(1032.45, 251.47)
+scale = Vector2(1.32384, 1.12619)
+texture = ExtResource("14_y1lwf")
+
+[node name="NotenzettelLinks5" type="Sprite2D" parent="."]
+position = Vector2(1237.11, 245.459)
+scale = Vector2(1.21067, 1.06967)
+texture = ExtResource("15_w6c5t")
+
+[node name="NotenzettelLinks6" type="Sprite2D" parent="."]
+position = Vector2(1413.45, 236.85)
+scale = Vector2(1.2955, 0.975636)
+texture = ExtResource("16_6nquf")
+
+[node name="NotenzettelLinks7" type="Sprite2D" parent="."]
+position = Vector2(1566.45, 233.436)
+scale = Vector2(1.07816, 0.994963)
+texture = ExtResource("17_pdj0y")
+
+[node name="NotenzettelLinks8" type="Sprite2D" parent="."]
+position = Vector2(1740.17, 239.448)
+scale = Vector2(1.37761, 0.943793)
+texture = ExtResource("18_jo76f")
+
+[node name="NotentafelNote1" type="Sprite2D" parent="."]
+position = Vector2(444.172, 179.335)
+scale = Vector2(0.492966, 0.356159)
+texture = ExtResource("19_a17yj")
+
+[node name="EulenNeutral" type="Sprite2D" parent="."]
+position = Vector2(1985.94, 154.796)
+scale = Vector2(0.462449, 0.206737)
+texture = ExtResource("20_3nufd")
+metadata/_edit_lock_ = true
+
+[node name="Notenanzeige2" type="Sprite2D" parent="."]
+position = Vector2(527.084, 168.315)
+scale = Vector2(1, 0.687977)
+texture = ExtResource("21_mgtn2")
+
+[node name="Notenanzeige3" type="Sprite2D" parent="."]
+position = Vector2(602.099, 158.296)
+scale = Vector2(0.923886, 0.662163)
+texture = ExtResource("22_tielr")
+
+[node name="Notenanzeige4" type="Sprite2D" parent="."]
+position = Vector2(692.908, 133.249)
+scale = Vector2(1, 0.583989)
+texture = ExtResource("23_rglo4")
+
+[node name="Notenanzeige5" type="Sprite2D" parent="."]
+position = Vector2(771.872, 117.219)
+scale = Vector2(1, 0.624557)
+texture = ExtResource("24_xwk1q")
+
+[node name="Notenanzeige6" type="Sprite2D" parent="."]
+position = Vector2(848.861, 106.198)
+scale = Vector2(1, 0.616783)
+texture = ExtResource("25_87keu")
+
+[node name="Notenanzeige7" type="Sprite2D" parent="."]
+position = Vector2(933.747, 91.1704)
+scale = Vector2(1, 0.489744)
+texture = ExtResource("26_hyyo0")
+
+[node name="Notenanzeige8" type="Sprite2D" parent="."]
+position = Vector2(931.773, 70.1311)
+scale = Vector2(1, 0.462628)
+texture = ExtResource("27_k1skw")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1524.0
+offset_top = -17.0318
+offset_right = 2118.0
+offset_bottom = 139.968
+texture = ExtResource("28_l7rnd")
 expand_mode = 1
-stretch_mode = 5
+metadata/_edit_lock_ = true
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
-layout_mode = 2
+[node name="Sprechblase" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 185.899
+anchor_top = -3.625
+anchor_right = 234.548
+anchor_bottom = 18.744
+offset_left = 196.712
+offset_top = 32.0056
+offset_right = 133.52
+offset_bottom = -32.9465
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 3
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ZurueckButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.87048
+offset_top = 515.964
+offset_right = 305.87
+offset_bottom = 613.964
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6vidi")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jsujs")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n1qfv")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ff2wh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_rftff")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_s8uxj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6udul")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8x7t5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4ud6a")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vof1l")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_45spr")
+text = "Zurück"
