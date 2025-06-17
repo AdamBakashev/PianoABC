@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://cwtjdh0lo2lep"]
 
 [ext_resource type="Script" uid="uid://cale2t3bvt52q" path="res://Skripte/learn_mode.gd" id="1_im8dy"]
-[ext_resource type="Texture2D" uid="uid://c6f540o2avgpm" path="res://Bilder/sammlung-von-musiknoten_23-2151543919.png" id="2_25pba"]
+[ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="2_kuh7n"]
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_u3gn0"]
 [ext_resource type="Texture2D" uid="uid://cb7a2h8vipaqe" path="res://Bilder/Projekt Klavierspiel/Icon/IconStartseite.png" id="4_kuh7n"]
 
@@ -33,8 +33,8 @@ layout_mode = 0
 offset_left = 2.0
 offset_right = 1154.0
 offset_bottom = 667.0
-texture = ExtResource("2_25pba")
-expand_mode = 1
+texture = ExtResource("2_kuh7n")
+expand_mode = 4
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
