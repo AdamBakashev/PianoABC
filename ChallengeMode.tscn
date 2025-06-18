@@ -1,9 +1,42 @@
-[gd_scene format=3 uid="uid://ctgcs8uq0bf5n"]
+[gd_scene load_steps=5 format=3 uid="uid://ctgcs8uq0bf5n"]
+
+[ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="1_srag6"]
+[ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_5vodu"]
+[ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="3_mcr1q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1fa0"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="challengeRoot" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Willkommen im challenge modus
-"
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -2
+offset_left = 2.0
+offset_right = 1154.0
+offset_bottom = 667.0
+texture = ExtResource("1_srag6")
+expand_mode = 4
+
+[node name="ZurückZumHauptmenü" type="Button" parent="TextureRect"]
+offset_left = 206.0
+offset_top = 498.0
+offset_right = 953.0
+offset_bottom = 598.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5vodu")
+theme_override_font_sizes/font_size = 53
+theme_override_styles/normal = SubResource("StyleBoxFlat_f1fa0")
+text = "Zurück zum Hauptmenü"
+icon = ExtResource("3_mcr1q")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 232.0
+offset_top = 38.0
+offset_right = 926.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5vodu")
+theme_override_font_sizes/font_size = 46
+text = "Zeit für eine Herausforderung!"
+horizontal_alignment = 1
+vertical_alignment = 1

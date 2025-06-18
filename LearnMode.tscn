@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cwtjdh0lo2lep"]
+[gd_scene load_steps=12 format=3 uid="uid://cwtjdh0lo2lep"]
 
 [ext_resource type="Script" uid="uid://cale2t3bvt52q" path="res://Skripte/learn_mode.gd" id="1_im8dy"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="2_kuh7n"]
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_u3gn0"]
-[ext_resource type="Texture2D" uid="uid://cb7a2h8vipaqe" path="res://Bilder/Projekt Klavierspiel/Icon/IconStartseite.png" id="4_kuh7n"]
+[ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="4_qak4o"]
+[ext_resource type="Texture2D" uid="uid://bwvrywgvqle6f" path="res://Bilder/Icon/IconMenüLeisteEingeklappt.png" id="5_ma8qk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kuh7n"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -29,6 +30,7 @@ anchors_preset = 0
 script = ExtResource("1_im8dy")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+z_index = -2
 layout_mode = 0
 offset_left = 2.0
 offset_right = 1154.0
@@ -38,22 +40,22 @@ expand_mode = 4
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 253.0
-offset_top = 34.0
-offset_right = 814.0
-offset_bottom = 110.0
+offset_left = 285.0
+offset_top = 53.0
+offset_right = 846.0
+offset_bottom = 129.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
 theme_override_font_sizes/font_size = 46
-text = "Wähle ein Lied zum Lernen"
+text = "Wähle ein Lied zum Lernen!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = -25.0
-offset_top = 77.0
-offset_right = 1118.0
+offset_left = 279.0
+offset_top = 175.0
+offset_right = 894.0
 offset_bottom = 476.0
 alignment = 1
 
@@ -101,16 +103,19 @@ text = "Twinkle Twinkle little Star "
 
 [node name="ZurückZumHauptmenü" type="Button" parent="."]
 layout_mode = 0
-offset_left = 239.0
-offset_top = 469.0
-offset_right = 881.0
-offset_bottom = 534.0
+offset_left = 213.0
+offset_top = 498.0
+offset_right = 963.0
+offset_bottom = 598.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
 theme_override_font_sizes/font_size = 53
 theme_override_styles/normal = SubResource("StyleBoxFlat_akvkb")
 text = "Zurück zum Hauptmenü"
+icon = ExtResource("4_qak4o")
 
-[node name="IconStartseite" type="Sprite2D" parent="."]
-position = Vector2(894, 505)
-texture = ExtResource("4_kuh7n")
+[node name="box" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(607, 377)
+scale = Vector2(3.8801, 2.67208)
+texture = ExtResource("5_ma8qk")
