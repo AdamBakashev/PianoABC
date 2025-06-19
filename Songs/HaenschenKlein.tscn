@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="8_u6hdr"]
 [ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="10_ehj6p"]
 [ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="11_tsynp"]
-[ext_resource type="Script" uid="uid://sr3b18vguexa" path="res://HaenschenKlein.gd" id="12_frmgl"]
+[ext_resource type="Script" uid="uid://sr3b18vguexa" path="res://Songs/HaenschenKlein.gd" id="12_frmgl"]
 [ext_resource type="AudioStream" uid="uid://bg0bwbq2jus4a" path="res://Sound/klavier-h-271379.mp3" id="12_li02t"]
 [ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="13_anfm4"]
 [ext_resource type="Texture2D" uid="uid://dfe643fgvgvt5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks1.png" id="14_djxf0"]

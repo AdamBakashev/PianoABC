@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://ctgcs8uq0bf5n"]
+[gd_scene load_steps=8 format=3 uid="uid://ctgcs8uq0bf5n"]
 
+[ext_resource type="Script" uid="uid://ccii2ki5gfd1a" path="res://Skripte/challenge_mode.gd" id="1_f1fa0"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="1_srag6"]
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_5vodu"]
 [ext_resource type="Texture2D" uid="uid://bwvrywgvqle6f" path="res://Bilder/Icon/IconMenüLeisteEingeklappt.png" id="3_f1fa0"]
@@ -10,6 +11,7 @@
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="challengeRoot" type="Node2D"]
+script = ExtResource("1_f1fa0")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 z_index = -2
@@ -61,7 +63,7 @@ Bereit?"
 horizontal_alignment = 1
 autowrap_mode = 3
 
-[node name="ZurückZumHauptmenü2" type="Button" parent="."]
+[node name="SpielenButton" type="Button" parent="."]
 offset_left = 484.0
 offset_top = 338.0
 offset_right = 732.0
