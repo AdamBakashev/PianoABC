@@ -82,10 +82,10 @@ text = "Challenge Modus
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.023
-offset_left = 179.0
-offset_top = 36.0
-offset_right = 367.504
-offset_bottom = 167.0
+offset_left = 176.5
+offset_top = 1.5
+offset_right = 365.004
+offset_bottom = 132.5
 theme_override_colors/font_color = Color(0.107745, 0.0649, 0.11, 1)
 theme_override_font_sizes/font_size = 46
 text = "PianoABC
@@ -118,3 +118,11 @@ theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_font_sizes/font_size = 53
 theme_override_styles/normal = SubResource("StyleBoxFlat_e2xy7")
 icon = ExtResource("8_e2xy7")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 55.5
+offset_right = 379.0
+offset_bottom = 78.5
+text = "Lernen mit Beethuuven!"
