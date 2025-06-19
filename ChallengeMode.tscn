@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ctgcs8uq0bf5n"]
+[gd_scene load_steps=7 format=3 uid="uid://ctgcs8uq0bf5n"]
 
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="1_srag6"]
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_5vodu"]
+[ext_resource type="Texture2D" uid="uid://bwvrywgvqle6f" path="res://Bilder/Icon/IconMenüLeisteEingeklappt.png" id="3_f1fa0"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="3_mcr1q"]
+[ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="5_s6soh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1fa0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -17,11 +19,30 @@ offset_bottom = 667.0
 texture = ExtResource("1_srag6")
 expand_mode = 4
 
-[node name="ZurückZumHauptmenü" type="Button" parent="TextureRect"]
-offset_left = 206.0
-offset_top = 498.0
-offset_right = 953.0
-offset_bottom = 598.0
+[node name="Label2" type="Label" parent="."]
+offset_left = 232.0
+offset_top = 106.0
+offset_right = 926.0
+offset_bottom = 216.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_5vodu")
+theme_override_font_sizes/font_size = 46
+text = "Zeit für eine Herausforderung!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(606, 296.5)
+scale = Vector2(3.84817, 2.49554)
+texture = ExtResource("3_f1fa0")
+
+[node name="ZurückZumHauptmenü" type="Button" parent="."]
+offset_left = 295.0
+offset_top = 550.0
+offset_right = 1051.0
+offset_bottom = 650.0
+scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_5vodu")
 theme_override_font_sizes/font_size = 53
@@ -29,14 +50,29 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_f1fa0")
 text = "Zurück zum Hauptmenü"
 icon = ExtResource("3_mcr1q")
 
-[node name="Label2" type="Label" parent="."]
-offset_left = 232.0
-offset_top = 38.0
-offset_right = 926.0
-offset_bottom = 129.0
+[node name="Label" type="Label" parent="."]
+offset_left = 317.0
+offset_top = 201.0
+offset_right = 605.0
+offset_bottom = 276.0
+scale = Vector2(1.79, 1.79)
+text = "Klicke so schnell wie möglich auf die Tasten, die Beethooven dir vorgibt! 
+Bereit?"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ZurückZumHauptmenü2" type="Button" parent="."]
+offset_left = 484.0
+offset_top = 338.0
+offset_right = 732.0
+offset_bottom = 575.0
+scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_5vodu")
-theme_override_font_sizes/font_size = 46
-text = "Zeit für eine Herausforderung!"
-horizontal_alignment = 1
-vertical_alignment = 1
+theme_override_font_sizes/font_size = 53
+theme_override_styles/normal = SubResource("StyleBoxFlat_f1fa0")
+text = "Spielen"
+icon = ExtResource("5_s6soh")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true

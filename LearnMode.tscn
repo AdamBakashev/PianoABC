@@ -103,19 +103,19 @@ text = "Twinkle Twinkle little Star "
 
 [node name="ZurückZumHauptmenü" type="Button" parent="."]
 layout_mode = 0
-offset_left = 213.0
-offset_top = 498.0
-offset_right = 963.0
-offset_bottom = 598.0
+offset_left = 248.0
+offset_top = 537.0
+offset_right = 880.0
+offset_bottom = 637.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
-theme_override_font_sizes/font_size = 53
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_akvkb")
 text = "Zurück zum Hauptmenü"
 icon = ExtResource("4_qak4o")
 
 [node name="box" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(607, 377)
-scale = Vector2(3.8801, 2.67208)
+position = Vector2(607, 310.363)
+scale = Vector2(3.8801, 2.07711)
 texture = ExtResource("5_ma8qk")
