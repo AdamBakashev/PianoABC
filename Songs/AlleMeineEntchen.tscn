@@ -223,7 +223,7 @@ script = ExtResource("1_x4rvq")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_top = 1.0
+offset_top = 1.00001
 offset_right = 2278.0
 offset_bottom = 603.0
 texture = ExtResource("2_6em52")
@@ -381,10 +381,10 @@ stream = ExtResource("5_3fda3")
 
 [node name="Key_B" type="Button" parent="."]
 layout_mode = 0
-offset_left = 3430.98
-offset_top = 652.219
-offset_right = 3701.98
-offset_bottom = 789.219
+offset_left = 1500.31
+offset_top = 331.62
+offset_right = 1771.31
+offset_bottom = 468.62
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)

@@ -1,295 +1,564 @@
-[gd_scene load_steps=38 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=122 format=3 uid="uid://dx7elbf12mq5w"]
 
-[ext_resource type="Texture2D" uid="uid://ds1qbnmnwe04e" path="res://Bilder/Klavier/Klavier.png" id="1_ppatl"]
-[ext_resource type="Texture2D" uid="uid://h7wqgxurh7ip" path="res://Bilder/Klavier/KlaviertasteLinks12.png" id="2_0x0pc"]
-[ext_resource type="Texture2D" uid="uid://dhf46hekxmwcd" path="res://Bilder/Klavier/KlaviertasteLinks11.png" id="3_iectq"]
-[ext_resource type="Texture2D" uid="uid://b5wehg5t4kgw0" path="res://Bilder/Klavier/KlaviertasteLinks10.png" id="4_hn11t"]
-[ext_resource type="Texture2D" uid="uid://d2pi7yn8ixe48" path="res://Bilder/Klavier/KlaviertasteLinks9.png" id="5_vavkl"]
-[ext_resource type="Texture2D" uid="uid://cn6gbjfoao4dj" path="res://Bilder/Klavier/KlaviertasteLinks8.png" id="6_rrdnd"]
-[ext_resource type="AudioStream" uid="uid://6l8fp8n6tu2e" path="res://Sound/single-piano-note-d5_60bpm_B_major.wav" id="6_w0jfg"]
-[ext_resource type="Texture2D" uid="uid://1hvtlxmq3j6e" path="res://Bilder/Klavier/KlaviertasteLinks7.png" id="7_6qs15"]
+[ext_resource type="Texture2D" uid="uid://bd72ko2ppte83" path="res://Bilder/Notentafel.png" id="1_fwi3h"]
+[ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://challengePlay.gd" id="1_qxu2w"]
+[ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_qxu2w"]
 [ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="8_8s1oq"]
-[ext_resource type="Texture2D" uid="uid://dx32ks12vrjg3" path="res://Bilder/Klavier/KlaviertasteLinks6.png" id="8_v55dp"]
-[ext_resource type="Texture2D" uid="uid://ijxct5n7bian" path="res://Bilder/Klavier/KlaviertasteLinks5.png" id="9_ugo3t"]
+[ext_resource type="AudioStream" uid="uid://d1nhe6i7kirkp" path="res://Sound/piano-note-b4-bright-one-shot_100bpm_B_minor.wav" id="9_w0jfg"]
+[ext_resource type="Texture2D" uid="uid://dfe643fgvgvt5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks1.png" id="10_8s1oq"]
 [ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="10_msyin"]
-[ext_resource type="Texture2D" uid="uid://sjdu27p5wvkt" path="res://Bilder/Klavier/KlaviertasteLinks4.png" id="10_wt5xo"]
-[ext_resource type="Texture2D" uid="uid://dxt36jbde07pv" path="res://Bilder/Klavier/KlaviertasteLinks3.png" id="11_b6hfy"]
+[ext_resource type="Texture2D" uid="uid://df6fwv86jnn4t" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks2.png" id="11_msyin"]
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="12_wie2i"]
-[ext_resource type="Texture2D" uid="uid://duabcuuke18by" path="res://Bilder/Klavier/KlaviertasteLinks2.png" id="12_yydyi"]
-[ext_resource type="Texture2D" uid="uid://bd2cpxkanhf1j" path="res://Bilder/Klavier/KlaviertasteLinks1.png" id="13_kd5c3"]
-[ext_resource type="Texture2D" uid="uid://8cfme10ihqra" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts1.png" id="14_b6hfy"]
+[ext_resource type="Texture2D" uid="uid://dfdf182f322e0" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks3.png" id="12_wss86"]
+[ext_resource type="Texture2D" uid="uid://b1fdmbeu0v58" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks4.png" id="13_0ojr5"]
+[ext_resource type="Texture2D" uid="uid://butqsjpfba26n" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks5.png" id="14_uc2a5"]
 [ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="14_wss86"]
-[ext_resource type="Texture2D" uid="uid://hm6xueil3x06" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts2.png" id="15_yydyi"]
+[ext_resource type="Texture2D" uid="uid://de8jiu1miowu5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks6.png" id="15_vse7g"]
 [ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="16_0ojr5"]
-[ext_resource type="Texture2D" uid="uid://dpaaljuff32gv" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts3.png" id="16_kd5c3"]
-[ext_resource type="Texture2D" uid="uid://d1k766bkuhp4t" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts4.png" id="17_60wxi"]
-[ext_resource type="Texture2D" uid="uid://ci4hwthtrquqa" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts5.png" id="18_hwjld"]
+[ext_resource type="Texture2D" uid="uid://cx15pxkmnp47r" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks7.png" id="16_m3ukn"]
+[ext_resource type="Texture2D" uid="uid://b0gxqe83v0v62" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks8.png" id="17_cg8r2"]
+[ext_resource type="Texture2D" uid="uid://bij41k6o0t0yb" path="res://Bilder/Projekt Klavierspiel/Notentafel/NotentafelNote1.png" id="18_lcpen"]
 [ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="18_uc2a5"]
-[ext_resource type="Texture2D" uid="uid://b2qkajpm3ngnn" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts6.png" id="19_fwi3h"]
-[ext_resource type="Texture2D" uid="uid://dfiub8ob1ds30" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts7.png" id="20_qxu2w"]
-[ext_resource type="Texture2D" uid="uid://cfd83shj0083j" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts8.png" id="21_w0jfg"]
-[ext_resource type="Texture2D" uid="uid://bdi5eqnguspeo" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts9.png" id="22_8s1oq"]
+[ext_resource type="Texture2D" uid="uid://cigb0ib2cc4ii" path="res://Bilder/Projekt Klavierspiel/Eule/EulenNeutral.png" id="19_edqv7"]
+[ext_resource type="Texture2D" uid="uid://ea52k5iucxw6" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige2.png" id="20_22j5q"]
+[ext_resource type="Texture2D" uid="uid://b36cp42p4mmvh" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige3.png" id="21_n56ng"]
+[ext_resource type="Texture2D" uid="uid://i77047qt8axf" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige4.png" id="22_wyxod"]
+[ext_resource type="Texture2D" uid="uid://c5fkmi6jov1ce" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige5.png" id="23_e4wgm"]
+[ext_resource type="Texture2D" uid="uid://bq3jpcty73h7v" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige6.png" id="24_1g13b"]
+[ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="25_o656v"]
+[ext_resource type="Texture2D" uid="uid://bvdieuocopw7g" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige8.png" id="26_kpcw0"]
+[ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="27_w5vyy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fwi3h"]
-size = Vector2(86.0313, 248.306)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmigv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxu2w"]
-size = Vector2(75.6528, 245.428)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oyo54"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_w0jfg"]
-size = Vector2(89.3234, 245.244)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u22v3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6hfy"]
-size = Vector2(94, 243)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_odkue"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yydyi"]
-size = Vector2(96, 244)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_se81g"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kd5c3"]
-size = Vector2(80.1234, 243.155)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tsh1d"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_60wxi"]
-size = Vector2(79.4509, 243.276)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w0jfg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hwjld"]
-size = Vector2(95.4861, 242.744)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0uvi6"]
 
-[node name="ChallengePlay" type="Node2D"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8s1oq"]
 
-[node name="TextureRect" type="TextureRect" parent="."]
-z_index = 13
-offset_top = -69.0
-offset_right = 1154.0
-offset_bottom = 960.0
-texture = ExtResource("1_ppatl")
-expand_mode = 3
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v1xod"]
 
-[node name="rechtsweiss2" type="Sprite2D" parent="."]
-z_index = 11
-position = Vector2(1068, 346)
-scale = Vector2(1.15528, 1)
-texture = ExtResource("2_0x0pc")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ni7pe"]
 
-[node name="rechtsweiss1" type="Sprite2D" parent="."]
-z_index = 10
-position = Vector2(1005.25, 339)
-scale = Vector2(1.03731, 1)
-texture = ExtResource("3_iectq")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e0u2o"]
 
-[node name="KeyC5" type="Area2D" parent="."]
-position = Vector2(823.434, 370.5)
-scale = Vector2(1.03374, 1.00055)
-skew = -0.13166
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4mgra"]
 
-[node name="c5" type="Sprite2D" parent="KeyC5"]
-z_index = 9
-position = Vector2(83.6934, -35.7901)
-scale = Vector2(1.00744, 1.01628)
-skew = 0.126387
-texture = ExtResource("4_hn11t")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rlw2g"]
 
-[node name="CollisionC5" type="CollisionShape2D" parent="KeyC5"]
-z_index = 14
-position = Vector2(91.6771, 1.59995)
-scale = Vector2(1.00744, 0.992096)
-skew = -0.0331613
-shape = SubResource("RectangleShape2D_fwi3h")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0o653"]
 
-[node name="SoundC5" type="AudioStreamPlayer2D" parent="KeyC5"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2k7y"]
 
-[node name="KeyB" type="Area2D" parent="."]
-position = Vector2(814.25, 338)
-scale = Vector2(1.03374, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m4si6"]
 
-[node name="b" type="Sprite2D" parent="KeyB"]
-z_index = 8
-texture = ExtResource("5_vavkl")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_msyin"]
 
-[node name="CollisionB" type="CollisionShape2D" parent="KeyB"]
-z_index = 14
-position = Vector2(8.88403, 32.5)
-scale = Vector2(1, 1)
-skew = -0.127409
-shape = SubResource("RectangleShape2D_qxu2w")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bsmqj"]
 
-[node name="SoundB" type="AudioStreamPlayer2D" parent="KeyB"]
-stream = ExtResource("6_w0jfg")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wie2i"]
 
-[node name="KeyA" type="Area2D" parent="."]
-position = Vector2(623, 378)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ct8p"]
 
-[node name="a" type="Sprite2D" parent="KeyA"]
-z_index = 7
-position = Vector2(104, -34)
-texture = ExtResource("6_rrdnd")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pfbsw"]
 
-[node name="CollisionA" type="CollisionShape2D" parent="KeyA"]
-z_index = 14
-position = Vector2(105.056, -6.36658)
-scale = Vector2(1, 1)
-skew = -0.0645772
-shape = SubResource("RectangleShape2D_w0jfg")
+[sub_resource type="FontVariation" id="FontVariation_2kfv7"]
 
-[node name="SoundA" type="AudioStreamPlayer2D" parent="KeyA"]
-stream = ExtResource("8_8s1oq")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tjv6q"]
 
-[node name="KeyG" type="Area2D" parent="."]
-position = Vector2(516, 383)
-scale = Vector2(1, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cnyy0"]
 
-[node name="g" type="Sprite2D" parent="KeyG"]
-z_index = 6
-position = Vector2(107, -36)
-scale = Vector2(1, 1)
-texture = ExtResource("7_6qs15")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2kfv7"]
 
-[node name="CollisionG" type="CollisionShape2D" parent="KeyG"]
-z_index = 14
-position = Vector2(107, -14.5)
-scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_b6hfy")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tum2h"]
 
-[node name="SoundG" type="AudioStreamPlayer2D" parent="KeyG"]
-stream = ExtResource("10_msyin")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h7whm"]
 
-[node name="KeyF" type="Area2D" parent="."]
-position = Vector2(416.262, 380.499)
-scale = Vector2(1.07792, 1)
-skew = 0.0523598
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gsbs7"]
 
-[node name="f" type="Sprite2D" parent="KeyF"]
-z_index = 5
-position = Vector2(87.8244, -39.5529)
-scale = Vector2(0.927711, 1.00255)
-skew = -0.0485145
-texture = ExtResource("8_v55dp")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wss86"]
 
-[node name="CollisionF" type="CollisionShape2D" parent="KeyF"]
-z_index = 14
-position = Vector2(92.0175, -10.5131)
-scale = Vector2(0.927711, 1.00255)
-skew = -0.0485145
-shape = SubResource("RectangleShape2D_yydyi")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v0pmb"]
 
-[node name="SoundF" type="AudioStreamPlayer2D" parent="KeyF"]
-stream = ExtResource("12_wie2i")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ojr5"]
 
-[node name="KeyE" type="Area2D" parent="."]
-position = Vector2(416, 342)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ej1r3"]
 
-[node name="e" type="Sprite2D" parent="KeyE"]
-z_index = 4
-texture = ExtResource("9_ugo3t")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hy4me"]
 
-[node name="CollisionE" type="CollisionShape2D" parent="KeyE"]
-z_index = 14
-position = Vector2(0.886261, 26.589)
-scale = Vector2(1.07792, 1)
-skew = 0.0523598
-shape = SubResource("RectangleShape2D_kd5c3")
+[sub_resource type="FontVariation" id="FontVariation_bgata"]
 
-[node name="SoundE" type="AudioStreamPlayer2D" parent="KeyE"]
-stream = ExtResource("14_wss86")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_udofv"]
 
-[node name="KeyD" type="Area2D" parent="."]
-position = Vector2(332, 345)
-scale = Vector2(1.07792, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ex5qj"]
 
-[node name="CollisionD" type="CollisionShape2D" parent="KeyD"]
-z_index = 14
-position = Vector2(-3.2854, 25.8388)
-rotation = 0.0150505
-scale = Vector2(0.927725, 0.999336)
-skew = 0.0756626
-shape = SubResource("RectangleShape2D_60wxi")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t0joj"]
 
-[node name="d" type="Sprite2D" parent="KeyD"]
-z_index = 3
-texture = ExtResource("10_wt5xo")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uq2s8"]
 
-[node name="SoundD" type="AudioStreamPlayer2D" parent="KeyD"]
-stream = ExtResource("16_0ojr5")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cnr25"]
 
-[node name="KeyC" type="Area2D" parent="."]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgata"]
 
-[node name="c" type="Sprite2D" parent="KeyC"]
-z_index = 2
-position = Vector2(250, 349)
-scale = Vector2(1.11321, 1)
-texture = ExtResource("11_b6hfy")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uc2a5"]
 
-[node name="CollisionC" type="CollisionShape2D" parent="KeyC"]
-z_index = 14
-position = Vector2(233.088, 371.233)
-rotation = 3.11018
-scale = Vector2(0.999999, 1)
-skew = 0.178024
-shape = SubResource("RectangleShape2D_hwjld")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8j1gt"]
 
-[node name="SoundC" type="AudioStreamPlayer2D" parent="KeyC"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vse7g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgyn1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h0hlh"]
+
+[sub_resource type="FontVariation" id="FontVariation_swghf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wyxod"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e4wgm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1g13b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o656v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kpcw0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w5vyy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m3ukn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d20ic"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lcpen"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k61he"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmd15"]
+
+[sub_resource type="FontVariation" id="FontVariation_85x4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jkiao"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dnpmb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_invou"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cy6lf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_af0rc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vneml"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_edqv7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_snrrg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_22j5q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_soc0a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y22at"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_swghf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d6aw5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fa0vj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7tkb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_to3wq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bmc0t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qxu2w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oh51v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n56ng"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dutt0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5da0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwkby"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jj44o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e0vrb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8m84x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_17qtq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ym76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_faus3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tlihw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x218k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_73uo7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ff3rw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cg8r2"]
+
+[node name="ChallengePlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qxu2w")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 1.00001
+offset_right = 1147.0
+offset_bottom = 603.0
+texture = ExtResource("1_fwi3h")
+expand_mode = 1
+
+[node name="AussehenKlavier" type="Sprite2D" parent="."]
+position = Vector2(576, 279.543)
+scale = Vector2(0.96, 0.349959)
+texture = ExtResource("2_qxu2w")
+
+[node name="Key_C" type="Button" parent="."]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 331.0
+offset_right = 263.0
+offset_bottom = 468.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dmigv")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_oyo54")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_u22v3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_odkue")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_se81g")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_tsh1d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_w0jfg")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_0uvi6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8s1oq")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_v1xod")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ni7pe")
+text = "C"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C"]
 stream = ExtResource("18_uc2a5")
 
-[node name="linksweiss2" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(157, 339)
-scale = Vector2(1.11321, 1)
-texture = ExtResource("12_yydyi")
+[node name="Key_D" type="Button" parent="."]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 334.0
+offset_right = 365.0
+offset_bottom = 471.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e0u2o")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_4mgra")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rlw2g")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_0o653")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_h2k7y")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_m4si6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_msyin")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_bsmqj")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wie2i")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_1ct8p")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pfbsw")
+text = "D"
 
-[node name="linksweiss1" type="Sprite2D" parent="."]
-position = Vector2(85, 347)
-scale = Vector2(1.19032, 1)
-texture = ExtResource("13_kd5c3")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_D"]
+stream = ExtResource("16_0ojr5")
 
-[node name="schwarzlink9" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(1144, 299)
-scale = Vector2(1, 0.716071)
-texture = ExtResource("14_b6hfy")
+[node name="Key_E" type="Button" parent="."]
+layout_mode = 0
+offset_left = 373.0
+offset_top = 333.0
+offset_right = 443.0
+offset_bottom = 470.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_2kfv7")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_tjv6q")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_cnyy0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2kfv7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_tum2h")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_h7whm")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_gsbs7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wss86")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_v0pmb")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0ojr5")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ej1r3")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hy4me")
+text = "E"
 
-[node name="schwarzlink8" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(951, 298)
-scale = Vector2(1, 0.764535)
-texture = ExtResource("15_yydyi")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_E"]
+stream = ExtResource("14_wss86")
 
-[node name="schwarzlink7" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(857, 284)
-scale = Vector2(1, 0.778431)
-texture = ExtResource("16_kd5c3")
+[node name="Key_F" type="Button" parent="."]
+layout_mode = 0
+offset_left = 490.0
+offset_top = 332.0
+offset_right = 549.0
+offset_bottom = 469.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_bgata")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_udofv")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ex5qj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t0joj")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_uq2s8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_cnr25")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_bgata")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_uc2a5")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8j1gt")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vse7g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vgyn1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_h0hlh")
+text = "F"
 
-[node name="schwarzlink6" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(759, 304)
-scale = Vector2(1, 0.777778)
-texture = ExtResource("17_60wxi")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_F"]
+stream = ExtResource("12_wie2i")
 
-[node name="schwarzlink5" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(569, 303.875)
-scale = Vector2(1, 0.763453)
-texture = ExtResource("18_hwjld")
+[node name="Key_G" type="Button" parent="."]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 333.0
+offset_right = 664.0
+offset_bottom = 470.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_swghf")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wyxod")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_e4wgm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1g13b")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_o656v")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_kpcw0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_w5vyy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m3ukn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_d20ic")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lcpen")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_k61he")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_dmd15")
+text = "G"
 
-[node name="schwarzlink4" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(475, 301.625)
-scale = Vector2(1, 0.767167)
-texture = ExtResource("19_fwi3h")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_G"]
+stream = ExtResource("10_msyin")
 
-[node name="schwarzlink3" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(295, 299)
-scale = Vector2(1, 0.747664)
-texture = ExtResource("20_qxu2w")
+[node name="Key_A" type="Button" parent="."]
+layout_mode = 0
+offset_left = 703.0
+offset_top = 333.0
+offset_right = 771.0
+offset_bottom = 470.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_85x4v")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jkiao")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dnpmb")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_invou")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_cy6lf")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_af0rc")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_vneml")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_edqv7")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_snrrg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_22j5q")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_soc0a")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_y22at")
+text = "A"
 
-[node name="schwarzlink2" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(197, 298.5)
-scale = Vector2(1, 0.742991)
-texture = ExtResource("21_w0jfg")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
+stream = ExtResource("8_8s1oq")
 
-[node name="schwarzlink1" type="Sprite2D" parent="."]
-z_index = 13
-position = Vector2(101, 292.125)
-scale = Vector2(1, 0.754329)
-texture = ExtResource("22_8s1oq")
+[node name="Key_B" type="Button" parent="."]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 334.0
+offset_right = 881.0
+offset_bottom = 471.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/focus = SubResource("StyleBoxEmpty_swghf")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_d6aw5")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_fa0vj")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_i7tkb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_to3wq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_bmc0t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qxu2w")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_oh51v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_n56ng")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dutt0")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j5da0")
+text = "B "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+stream = ExtResource("9_w0jfg")
+
+[node name="NotenzettelLinks1" type="Sprite2D" parent="."]
+position = Vector2(240, 266)
+scale = Vector2(1.01935, 1.08628)
+texture = ExtResource("10_8s1oq")
+
+[node name="NotenzettelLinks2" type="Sprite2D" parent="."]
+position = Vector2(342, 264)
+scale = Vector2(1.00812, 1.12339)
+texture = ExtResource("11_msyin")
+
+[node name="NotenzettelLinks3" type="Sprite2D" parent="."]
+position = Vector2(435, 269)
+scale = Vector2(0.920202, 1.02883)
+texture = ExtResource("12_wss86")
+
+[node name="NotenzettelLinks4" type="Sprite2D" parent="."]
+position = Vector2(522.234, 261)
+scale = Vector2(0.893952, 1.12619)
+texture = ExtResource("13_0ojr5")
+
+[node name="NotenzettelLinks5" type="Sprite2D" parent="."]
+position = Vector2(607, 263)
+scale = Vector2(0.845333, 1.06967)
+texture = ExtResource("14_uc2a5")
+
+[node name="NotenzettelLinks6" type="Sprite2D" parent="."]
+position = Vector2(697.022, 255)
+scale = Vector2(0.796532, 0.975636)
+texture = ExtResource("15_vse7g")
+
+[node name="NotenzettelLinks7" type="Sprite2D" parent="."]
+position = Vector2(784.96, 246)
+scale = Vector2(0.769849, 0.994963)
+texture = ExtResource("16_m3ukn")
+
+[node name="NotenzettelLinks8" type="Sprite2D" parent="."]
+position = Vector2(887, 250)
+scale = Vector2(0.759524, 0.943793)
+texture = ExtResource("17_cg8r2")
+
+[node name="NotentafelNote1" type="Sprite2D" parent="."]
+position = Vector2(251, 182)
+scale = Vector2(0.492966, 0.356159)
+texture = ExtResource("18_lcpen")
+
+[node name="EulenNeutral" type="Sprite2D" parent="."]
+position = Vector2(1058.52, 231.926)
+scale = Vector2(0.275877, 0.234412)
+texture = ExtResource("19_edqv7")
+
+[node name="Notenanzeige2" type="Sprite2D" parent="."]
+position = Vector2(341, 158)
+scale = Vector2(1, 0.687977)
+texture = ExtResource("20_22j5q")
+
+[node name="Notenanzeige3" type="Sprite2D" parent="."]
+position = Vector2(441, 142)
+scale = Vector2(0.923886, 0.662163)
+texture = ExtResource("21_n56ng")
+
+[node name="Notenanzeige4" type="Sprite2D" parent="."]
+position = Vector2(521, 112)
+scale = Vector2(1, 0.583989)
+texture = ExtResource("22_wyxod")
+
+[node name="Notenanzeige5" type="Sprite2D" parent="."]
+position = Vector2(615, 89)
+scale = Vector2(1, 0.624557)
+texture = ExtResource("23_e4wgm")
+
+[node name="Notenanzeige6" type="Sprite2D" parent="."]
+position = Vector2(699, 73)
+scale = Vector2(1, 0.616783)
+texture = ExtResource("24_1g13b")
+
+[node name="Notenanzeige7" type="Sprite2D" parent="."]
+position = Vector2(768, 42)
+scale = Vector2(1, 0.65)
+texture = ExtResource("25_o656v")
+
+[node name="Notenanzeige8" type="Sprite2D" parent="."]
+position = Vector2(837, 18)
+scale = Vector2(1, 0.583832)
+texture = ExtResource("26_kpcw0")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 731.0
+offset_top = -5.0
+offset_right = 1180.0
+offset_bottom = 230.0
+texture = ExtResource("27_w5vyy")
+expand_mode = 1
+
+[node name="Sprechblase" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 185.899
+anchor_top = -3.625
+anchor_right = 234.548
+anchor_bottom = 18.744
+offset_left = 855.0
+offset_top = 40.0
+offset_right = 1074.0
+offset_bottom = 161.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ZurueckButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 493.0
+offset_right = 277.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 75
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uwkby")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jj44o")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_e0vrb")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_8m84x")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_17qtq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2ym76")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_faus3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_tlihw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_x218k")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_73uo7")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ff3rw")
+text = "Zurück"
+
+[node name="LevelLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 806.0
+offset_top = 508.0
+offset_right = 1199.0
+offset_bottom = 614.0
+theme_override_colors/font_color = Color(1, 1, 0.933333, 1)
+theme_override_font_sizes/font_size = 40
+
+[node name="ReadyButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 501.0
+offset_right = 781.0
+offset_bottom = 586.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cg8r2")
+text = "Wenn du bereit bist, klicke hier"
