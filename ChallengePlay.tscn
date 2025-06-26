@@ -1,33 +1,16 @@
-[gd_scene load_steps=124 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=107 format=3 uid="uid://dx7elbf12mq5w"]
 
-[ext_resource type="Texture2D" uid="uid://bd72ko2ppte83" path="res://Bilder/Notentafel.png" id="1_fwi3h"]
 [ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://challengePlay.gd" id="1_qxu2w"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_qxu2w"]
 [ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="8_8s1oq"]
 [ext_resource type="AudioStream" uid="uid://d1nhe6i7kirkp" path="res://Sound/piano-note-b4-bright-one-shot_100bpm_B_minor.wav" id="9_w0jfg"]
-[ext_resource type="Texture2D" uid="uid://dfe643fgvgvt5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks1.png" id="10_8s1oq"]
 [ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="10_msyin"]
-[ext_resource type="Texture2D" uid="uid://df6fwv86jnn4t" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks2.png" id="11_msyin"]
+[ext_resource type="Texture2D" uid="uid://dpv4rnl35tgy2" path="res://Bilder/Notenanzeige/Notenanzeige.png" id="11_0x0pc"]
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="12_wie2i"]
-[ext_resource type="Texture2D" uid="uid://dfdf182f322e0" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks3.png" id="12_wss86"]
-[ext_resource type="Texture2D" uid="uid://b1fdmbeu0v58" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks4.png" id="13_0ojr5"]
-[ext_resource type="Texture2D" uid="uid://butqsjpfba26n" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks5.png" id="14_uc2a5"]
 [ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="14_wss86"]
-[ext_resource type="Texture2D" uid="uid://de8jiu1miowu5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks6.png" id="15_vse7g"]
 [ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="16_0ojr5"]
-[ext_resource type="Texture2D" uid="uid://cx15pxkmnp47r" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks7.png" id="16_m3ukn"]
-[ext_resource type="Texture2D" uid="uid://b0gxqe83v0v62" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks8.png" id="17_cg8r2"]
-[ext_resource type="Texture2D" uid="uid://bij41k6o0t0yb" path="res://Bilder/Projekt Klavierspiel/Notentafel/NotentafelNote1.png" id="18_lcpen"]
 [ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="18_uc2a5"]
 [ext_resource type="Texture2D" uid="uid://cigb0ib2cc4ii" path="res://Bilder/Projekt Klavierspiel/Eule/EulenNeutral.png" id="19_edqv7"]
-[ext_resource type="Texture2D" uid="uid://ea52k5iucxw6" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige2.png" id="20_22j5q"]
-[ext_resource type="Texture2D" uid="uid://b36cp42p4mmvh" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige3.png" id="21_n56ng"]
-[ext_resource type="Texture2D" uid="uid://i77047qt8axf" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige4.png" id="22_wyxod"]
-[ext_resource type="Texture2D" uid="uid://c5fkmi6jov1ce" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige5.png" id="23_e4wgm"]
-[ext_resource type="Texture2D" uid="uid://bq3jpcty73h7v" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige6.png" id="24_1g13b"]
-[ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="25_o656v"]
-[ext_resource type="Texture2D" uid="uid://bvdieuocopw7g" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige8.png" id="26_kpcw0"]
-[ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="27_w5vyy"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="29_8s1oq"]
 [ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="30_msyin"]
 
@@ -222,27 +205,17 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_qxu2w")
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = -1.0
-offset_right = 1146.0
-offset_bottom = 600.0
-texture = ExtResource("1_fwi3h")
-expand_mode = 1
-metadata/_edit_lock_ = true
-
 [node name="AussehenKlavier" type="Sprite2D" parent="."]
-position = Vector2(576, 279.543)
-scale = Vector2(0.96, 0.349959)
+position = Vector2(576, 121)
+scale = Vector2(0.96, 0.672381)
 texture = ExtResource("2_qxu2w")
-metadata/_edit_lock_ = true
 
 [node name="Key_C" type="Button" parent="."]
 layout_mode = 0
-offset_left = 195.0
-offset_top = 331.0
-offset_right = 263.0
-offset_bottom = 468.0
+offset_left = 175.0
+offset_top = 321.0
+offset_right = 265.0
+offset_bottom = 430.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
@@ -264,10 +237,10 @@ stream = ExtResource("18_uc2a5")
 
 [node name="Key_D" type="Button" parent="."]
 layout_mode = 0
-offset_left = 286.0
-offset_top = 334.0
-offset_right = 365.0
-offset_bottom = 471.0
+offset_left = 274.0
+offset_top = 314.0
+offset_right = 361.0
+offset_bottom = 432.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
@@ -290,9 +263,9 @@ stream = ExtResource("16_0ojr5")
 [node name="Key_E" type="Button" parent="."]
 layout_mode = 0
 offset_left = 373.0
-offset_top = 333.0
-offset_right = 443.0
-offset_bottom = 470.0
+offset_top = 323.0
+offset_right = 462.0
+offset_bottom = 427.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_2kfv7")
@@ -315,10 +288,10 @@ stream = ExtResource("14_wss86")
 
 [node name="Key_F" type="Button" parent="."]
 layout_mode = 0
-offset_left = 490.0
-offset_top = 332.0
-offset_right = 549.0
-offset_bottom = 469.0
+offset_left = 472.0
+offset_top = 327.0
+offset_right = 564.0
+offset_bottom = 424.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_bgata")
@@ -341,10 +314,10 @@ stream = ExtResource("12_wie2i")
 
 [node name="Key_G" type="Button" parent="."]
 layout_mode = 0
-offset_left = 595.0
-offset_top = 333.0
-offset_right = 664.0
-offset_bottom = 470.0
+offset_left = 580.0
+offset_top = 324.0
+offset_right = 670.0
+offset_bottom = 423.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_swghf")
@@ -367,10 +340,10 @@ stream = ExtResource("10_msyin")
 
 [node name="Key_A" type="Button" parent="."]
 layout_mode = 0
-offset_left = 703.0
-offset_top = 333.0
-offset_right = 771.0
-offset_bottom = 470.0
+offset_left = 681.0
+offset_top = 319.0
+offset_right = 775.0
+offset_bottom = 423.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_85x4v")
@@ -393,10 +366,10 @@ stream = ExtResource("8_8s1oq")
 
 [node name="Key_B" type="Button" parent="."]
 layout_mode = 0
-offset_left = 788.0
-offset_top = 334.0
-offset_right = 881.0
-offset_bottom = 471.0
+offset_left = 787.0
+offset_top = 317.0
+offset_right = 887.0
+offset_bottom = 430.0
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
@@ -416,107 +389,18 @@ text = "B "
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
 stream = ExtResource("9_w0jfg")
 
-[node name="NotenzettelLinks1" type="Sprite2D" parent="."]
-position = Vector2(240, 266)
-scale = Vector2(1.01935, 1.08628)
-texture = ExtResource("10_8s1oq")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks2" type="Sprite2D" parent="."]
-position = Vector2(342, 264)
-scale = Vector2(1.00812, 1.12339)
-texture = ExtResource("11_msyin")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks3" type="Sprite2D" parent="."]
-position = Vector2(435, 269)
-scale = Vector2(0.920202, 1.02883)
-texture = ExtResource("12_wss86")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks4" type="Sprite2D" parent="."]
-position = Vector2(522.234, 261)
-scale = Vector2(0.893952, 1.12619)
-texture = ExtResource("13_0ojr5")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks5" type="Sprite2D" parent="."]
-position = Vector2(607, 263)
-scale = Vector2(0.845333, 1.06967)
-texture = ExtResource("14_uc2a5")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks6" type="Sprite2D" parent="."]
-position = Vector2(697.022, 255)
-scale = Vector2(0.796532, 0.975636)
-texture = ExtResource("15_vse7g")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks7" type="Sprite2D" parent="."]
-position = Vector2(784.96, 246)
-scale = Vector2(0.769849, 0.994963)
-texture = ExtResource("16_m3ukn")
-metadata/_edit_lock_ = true
-
-[node name="NotenzettelLinks8" type="Sprite2D" parent="."]
-position = Vector2(887, 250)
-scale = Vector2(0.759524, 0.943793)
-texture = ExtResource("17_cg8r2")
-metadata/_edit_lock_ = true
-
-[node name="NotentafelNote1" type="Sprite2D" parent="."]
-position = Vector2(251, 182)
-scale = Vector2(0.492966, 0.356159)
-texture = ExtResource("18_lcpen")
-
 [node name="EulenNeutral" type="Sprite2D" parent="."]
-position = Vector2(1058.52, 231.926)
+position = Vector2(821, 101)
 scale = Vector2(0.275877, 0.234412)
 texture = ExtResource("19_edqv7")
-metadata/_edit_lock_ = true
-
-[node name="Notenanzeige2" type="Sprite2D" parent="."]
-position = Vector2(341, 158)
-scale = Vector2(1, 0.687977)
-texture = ExtResource("20_22j5q")
-
-[node name="Notenanzeige3" type="Sprite2D" parent="."]
-position = Vector2(441, 142)
-scale = Vector2(0.923886, 0.662163)
-texture = ExtResource("21_n56ng")
-
-[node name="Notenanzeige4" type="Sprite2D" parent="."]
-position = Vector2(521, 112)
-scale = Vector2(1, 0.583989)
-texture = ExtResource("22_wyxod")
-
-[node name="Notenanzeige5" type="Sprite2D" parent="."]
-position = Vector2(615, 89)
-scale = Vector2(1, 0.624557)
-texture = ExtResource("23_e4wgm")
-
-[node name="Notenanzeige6" type="Sprite2D" parent="."]
-position = Vector2(699, 73)
-scale = Vector2(1, 0.616783)
-texture = ExtResource("24_1g13b")
-
-[node name="Notenanzeige7" type="Sprite2D" parent="."]
-position = Vector2(768, 42)
-scale = Vector2(1, 0.65)
-texture = ExtResource("25_o656v")
-
-[node name="Notenanzeige8" type="Sprite2D" parent="."]
-position = Vector2(837, 18)
-scale = Vector2(1, 0.583832)
-texture = ExtResource("26_kpcw0")
 
 [node name="TextureRect3" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 731.0
-offset_top = -5.0
-offset_right = 1180.0
-offset_bottom = 230.0
-texture = ExtResource("27_w5vyy")
+offset_left = 896.0
+offset_top = 5.0
+offset_right = 1158.0
+offset_bottom = 201.0
+texture = ExtResource("11_0x0pc")
 expand_mode = 1
 
 [node name="Sprechblase" type="Label" parent="."]
@@ -526,16 +410,15 @@ anchor_left = 185.899
 anchor_top = -3.625
 anchor_right = 234.548
 anchor_bottom = 18.744
-offset_left = 855.0
-offset_top = 40.0
-offset_right = 1074.0
-offset_bottom = 161.0
+offset_left = 972.0
+offset_top = 36.0
+offset_right = 1150.0
+offset_bottom = 137.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
-metadata/_edit_lock_ = true
 
 [node name="ZurueckButton" type="Button" parent="."]
 layout_mode = 0

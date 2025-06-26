@@ -1,0 +1,403 @@
+[gd_scene load_steps=103 format=3 uid="uid://dbtlk4dwefde8"]
+
+[ext_resource type="Script" uid="uid://dawqjv2qnjnxw" path="res://freeplaykeyboard.gd" id="1_gu25d"]
+[ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="1_x0slp"]
+[ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="2_gu25d"]
+[ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="3_dxb2e"]
+[ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="4_mp6nh"]
+[ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="5_xh81t"]
+[ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="6_m4oky"]
+[ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="7_kgdgt"]
+[ext_resource type="AudioStream" uid="uid://d1nhe6i7kirkp" path="res://Sound/piano-note-b4-bright-one-shot_100bpm_B_minor.wav" id="8_sl1em"]
+[ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="9_q2jtm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y5rrk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2xq3s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_441ea"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ltwp4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gaffh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jb88n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bqxtl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_76724"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uoqy7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n8run"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_68ay5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4sd65"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dkq1t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y732y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4qo2g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8amtk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pqpmt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wvgfj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jlf8c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxvi4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ifl5r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_latux"]
+
+[sub_resource type="FontVariation" id="FontVariation_oxjyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vsye0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_euqwv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ninyh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h2ykp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vkyox"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rjm66"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xn5sa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lorq6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_asv33"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5b4id"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fn0sd"]
+
+[sub_resource type="FontVariation" id="FontVariation_ts1u6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sj6el"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kn5n3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jjpm3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1kak"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8mpu8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kw1gr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ebphb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxiup"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_om3gn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_avcfy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16dqo"]
+
+[sub_resource type="FontVariation" id="FontVariation_tp0t4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ntp7g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mcjfm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p8qhr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gqf0h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t7wqf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o1ih0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nefes"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lg00d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rar3h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8rde1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_byotx"]
+
+[sub_resource type="FontVariation" id="FontVariation_6y5o4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wtdwp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5w7tj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dyabk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbpmv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ti5jm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6g5tj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_juxyp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u3f0g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hj2gd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ri0j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1edec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ya0dx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0vapk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b1jeh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3c5lh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0ksa3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_25cig"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k2h5c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rd7eh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylurs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yod6o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sbdvf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cx4se"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_beml7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqikk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irubt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxujq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57ids"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h80v6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8wcf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwwd2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_urhpw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ruwb6"]
+
+[node name="Keyboard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gu25d")
+
+[node name="AussehenKlavier" type="Sprite2D" parent="."]
+position = Vector2(576, 121)
+scale = Vector2(0.96, 0.672381)
+texture = ExtResource("1_x0slp")
+
+[node name="Key_C" type="Button" parent="."]
+offset_left = 175.0
+offset_top = 321.0
+offset_right = 265.0
+offset_bottom = 430.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_y5rrk")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2xq3s")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_441ea")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ltwp4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_gaffh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jb88n")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bqxtl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_76724")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uoqy7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_n8run")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_68ay5")
+text = "C"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C"]
+stream = ExtResource("2_gu25d")
+
+[node name="Key_D" type="Button" parent="."]
+offset_left = 274.0
+offset_top = 314.0
+offset_right = 361.0
+offset_bottom = 432.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4sd65")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dkq1t")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_y732y")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_4qo2g")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_8amtk")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pqpmt")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wvgfj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_jlf8c")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hxvi4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ifl5r")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_latux")
+text = "D"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_D"]
+stream = ExtResource("3_dxb2e")
+
+[node name="Key_E" type="Button" parent="."]
+offset_left = 373.0
+offset_top = 323.0
+offset_right = 462.0
+offset_bottom = 427.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_oxjyi")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vsye0")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_euqwv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ninyh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h2ykp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_vkyox")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_rjm66")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xn5sa")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_lorq6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_asv33")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5b4id")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fn0sd")
+text = "E"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_E"]
+stream = ExtResource("4_mp6nh")
+
+[node name="Key_F" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 327.0
+offset_right = 564.0
+offset_bottom = 424.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_ts1u6")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_sj6el")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_kn5n3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_jjpm3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_w1kak")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_8mpu8")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_kw1gr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ebphb")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_wxiup")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_om3gn")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_avcfy")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_16dqo")
+text = "F"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_F"]
+stream = ExtResource("5_xh81t")
+
+[node name="Key_G" type="Button" parent="."]
+offset_left = 580.0
+offset_top = 324.0
+offset_right = 670.0
+offset_bottom = 423.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_tp0t4")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ntp7g")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_mcjfm")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_p8qhr")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_gqf0h")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_t7wqf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_o1ih0")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nefes")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_lg00d")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rar3h")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8rde1")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_byotx")
+text = "G"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_G"]
+stream = ExtResource("6_m4oky")
+
+[node name="Key_A" type="Button" parent="."]
+offset_left = 681.0
+offset_top = 319.0
+offset_right = 775.0
+offset_bottom = 423.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_6y5o4")
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wtdwp")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5w7tj")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_dyabk")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_nbpmv")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ti5jm")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6g5tj")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_juxyp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_u3f0g")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hj2gd")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6ri0j")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_1edec")
+text = "A"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
+stream = ExtResource("7_kgdgt")
+
+[node name="Key_B" type="Button" parent="."]
+offset_left = 787.0
+offset_top = 317.0
+offset_right = 887.0
+offset_bottom = 430.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 70
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ya0dx")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_0vapk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b1jeh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3c5lh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_0ksa3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_25cig")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k2h5c")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_rd7eh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ylurs")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yod6o")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_sbdvf")
+text = "B "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+stream = ExtResource("8_sl1em")
+
+[node name="ZurueckButton" type="Button" parent="."]
+offset_left = 26.0
+offset_top = 493.0
+offset_right = 277.0
+offset_bottom = 596.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cx4se")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_beml7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_rqikk")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_irubt")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lxujq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_57ids")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_h80v6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_e8wcf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dwwd2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_urhpw")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ruwb6")
+text = "Zurück"
+icon = ExtResource("9_q2jtm")
+metadata/_edit_lock_ = true
