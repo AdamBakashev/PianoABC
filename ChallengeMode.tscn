@@ -23,9 +23,9 @@ expand_mode = 4
 
 [node name="Label2" type="Label" parent="."]
 offset_left = 232.0
-offset_top = 106.0
+offset_top = 104.0
 offset_right = 926.0
-offset_bottom = 216.0
+offset_bottom = 169.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_5vodu")
 theme_override_font_sizes/font_size = 46
@@ -53,21 +53,21 @@ text = "Zurück zum Hauptmenü"
 icon = ExtResource("3_mcr1q")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 273.0
-offset_top = 206.0
-offset_right = 622.0
-offset_bottom = 281.0
+offset_left = 264.0
+offset_top = 174.0
+offset_right = 616.0
+offset_bottom = 275.0
 scale = Vector2(1.79, 1.79)
-text = "Merke dir die Noten, die dir Beethooven vorspielt und versuche es nachzuspielen!
+text = "Merke dir die Noten, die dir Beethooven vorspielt und versuche es nachzuspielen, bevor die Zeit abläuft!
 Bereit?"
 horizontal_alignment = 1
 autowrap_mode = 3
 
 [node name="SpielenButton" type="Button" parent="."]
-offset_left = 484.0
-offset_top = 338.0
-offset_right = 732.0
-offset_bottom = 575.0
+offset_left = 493.0
+offset_top = 360.0
+offset_right = 700.0
+offset_bottom = 564.0
 scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_5vodu")
