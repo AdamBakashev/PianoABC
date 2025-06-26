@@ -53,12 +53,12 @@ text = "Zurück zum Hauptmenü"
 icon = ExtResource("3_mcr1q")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 317.0
-offset_top = 201.0
-offset_right = 605.0
-offset_bottom = 276.0
+offset_left = 273.0
+offset_top = 206.0
+offset_right = 622.0
+offset_bottom = 281.0
 scale = Vector2(1.79, 1.79)
-text = "Klicke so schnell wie möglich auf die Tasten, die Beethooven dir vorgibt! 
+text = "Merke dir die Noten, die dir Beethooven vorspielt und versuche es nachzuspielen!
 Bereit?"
 horizontal_alignment = 1
 autowrap_mode = 3

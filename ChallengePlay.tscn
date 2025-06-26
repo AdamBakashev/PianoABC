@@ -1,4 +1,4 @@
-[gd_scene load_steps=122 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=124 format=3 uid="uid://dx7elbf12mq5w"]
 
 [ext_resource type="Texture2D" uid="uid://bd72ko2ppte83" path="res://Bilder/Notentafel.png" id="1_fwi3h"]
 [ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://challengePlay.gd" id="1_qxu2w"]
@@ -28,6 +28,8 @@
 [ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="25_o656v"]
 [ext_resource type="Texture2D" uid="uid://bvdieuocopw7g" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige8.png" id="26_kpcw0"]
 [ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="27_w5vyy"]
+[ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="29_8s1oq"]
+[ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="30_msyin"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmigv"]
 
@@ -541,7 +543,7 @@ offset_left = 26.0
 offset_top = 493.0
 offset_right = 277.0
 offset_bottom = 596.0
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 40
 theme_override_styles/focus = SubResource("StyleBoxEmpty_uwkby")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jj44o")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_e0vrb")
@@ -554,6 +556,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_x218k")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_73uo7")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ff3rw")
 text = "Zurück"
+icon = ExtResource("29_8s1oq")
 metadata/_edit_lock_ = true
 
 [node name="LevelLabel" type="Label" parent="."]
@@ -568,11 +571,12 @@ metadata/_edit_lock_ = true
 
 [node name="ReadyButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 304.0
-offset_top = 501.0
-offset_right = 781.0
-offset_bottom = 586.0
+offset_left = 385.0
+offset_top = 491.0
+offset_right = 736.0
+offset_bottom = 598.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cg8r2")
-text = "Wenn du bereit bist, klicke hier"
+text = "Starte das Spiel!"
+icon = ExtResource("30_msyin")
