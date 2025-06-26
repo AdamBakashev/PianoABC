@@ -14,13 +14,11 @@ extends Control
 @onready var zurueck_button: Button = $ZurueckButton
 
 var song_notes = [
-	"D", "B", "B", "C", "A", "A", "G",
-	"A", "B", "C", "D", "D", "D", "D",
-	"B", "B", "C", "A", "A", "G",
-	"B", "D", "D", "G", "A", "A", "A", "A",
-	"A", "B", "C", "B", "B", "B", "B", "B",
-	"C", "D", "D", "B", "B", "C", "A", "A", "G",
-	"B", "D", "D", "G"
+	"G", "E", "F", "G", "E", "C", "D", "D", "D", "E",
+	"C", "G", "E", "F", "G", "E", "C", "D", "D", "D",
+	"E", "C", "C", "D", "D", "D", "E", "F", "D", "D",
+	"E", "D", "E", "F", "G", "G", "E", "F", "G", "E",
+	"C", "D", "D", "D", "E", "C"
 ]
 
 var current_note_index = 0
@@ -39,22 +37,17 @@ func _on_key_pressed(key_name):
 	var expected_note = song_notes[current_note_index]
 	var pressed_note = key_name.replace("Key_", "")
 	
+	var player = key_notes[key_name]
+	if player.playing:
+		player.stop()
+	player.play()
+	
 	if pressed_note == expected_note:
-		var player = key_notes[key_name]
-		if player.playing:
-			player.stop()
-		player.play()
-		
 		current_note_index += 1
 		if current_note_index >= song_notes.size():
 			show_congratulations()
 			current_note_index = 0
-		_update_highlighted_key()
-	else:
-		var player = key_notes[key_name]
-		if player.playing:
-			player.stop()
-		player.play()
+	_update_highlighted_key()
 
 func _update_highlighted_key():
 	for key in key_notes.keys():
@@ -68,7 +61,7 @@ func _update_highlighted_key():
 			var highlight_button = get_node(highlight_key)
 			highlight_button.add_theme_color_override("font_color", Color.BLACK)
 			highlight_button.add_theme_color_override("button_color", Color(1, 1, 0.5)) # Gelb
-		sprechblase.text = "Drücke: " + note
+		sprechblase.text = "Drücke:" + note
 	else:
 		sprechblase.text = "🎉 Fertig!"
 		last_highlighted = null
@@ -79,7 +72,7 @@ func _reset_button_style(button):
 
 func show_congratulations():
 	var popup = AcceptDialog.new()
-	popup.dialog_text = "🎉 Super! Du hast Hänschen klein gespielt!"
+	popup.dialog_text = "🎉 Super! Du hast Alle meine Entchen gespielt!"
 	add_child(popup)
 	popup.popup_centered()
 

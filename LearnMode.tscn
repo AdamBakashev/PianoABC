@@ -75,7 +75,8 @@ theme_override_colors/font_color = Color(0.0196078, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_qak4o")
-text = "Bruder Jakob "
+text = "Jingle Bells
+"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -83,7 +84,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_ma8qk")
-text = "Happy Birthday "
+text = "Fuchs du hast die Gans gestohlen
+"
 
 [node name="Button4" type="Button" parent="VBoxContainer"]
 layout_mode = 2
@@ -91,7 +93,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_u3gn0")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxFlat_341hf")
-text = "Hänschen Klein "
+text = "Hänsel und Gretel"
 
 [node name="Button5" type="Button" parent="VBoxContainer"]
 layout_mode = 2

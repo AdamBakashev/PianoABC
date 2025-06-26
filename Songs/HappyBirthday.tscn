@@ -1,14 +1,13 @@
-[gd_scene load_steps=131 format=3 uid="uid://dwkqhwav34llf"]
+[gd_scene load_steps=119 format=3 uid="uid://dwkqhwav34llf"]
 
+[ext_resource type="Script" uid="uid://bx5negu7jwoo3" path="res://Songs/FuchsGans.gd" id="1_hwokx"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="1_i705i"]
-[ext_resource type="Script" uid="uid://bx5negu7jwoo3" path="res://Songs/happyBirthday.gd" id="1_ululh"]
 [ext_resource type="Texture2D" uid="uid://bi6c8676vpdki" path="res://Bilder/Projekt Klavierspiel/Notentafel/Notentafel.png" id="2_hwokx"]
 [ext_resource type="Texture2D" uid="uid://buoteby2kjmde" path="res://Bilder/EulenNeutral.png" id="3_ululh"]
 [ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="4_12ihk"]
 [ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="5_sk23q"]
 [ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="6_dg0pg"]
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="7_7jbp7"]
-[ext_resource type="AudioStream" uid="uid://d2xt65e5jv2uf" path="res://Sound/piano-f_F#_major.wav" id="8_xcbca"]
 [ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="9_b1o4x"]
 [ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="10_rt1ga"]
 [ext_resource type="AudioStream" uid="uid://bg0bwbq2jus4a" path="res://Sound/klavier-h-271379.mp3" id="11_sjn85"]
@@ -28,7 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://c5fkmi6jov1ce" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige5.png" id="25_mmsb2"]
 [ext_resource type="Texture2D" uid="uid://bq3jpcty73h7v" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige6.png" id="26_dsttv"]
 [ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="27_0rgt5"]
-[ext_resource type="AudioStream" uid="uid://6l8fp8n6tu2e" path="res://Sound/single-piano-note-d5_60bpm_B_major.wav" id="29_ululh"]
+[ext_resource type="AudioStream" uid="uid://btftdpqa5v8oa" path="res://Sound/C5 right one.wav" id="28_hwokx"]
+[ext_resource type="Texture2D" uid="uid://cmnt1w72yg2kt" path="res://Bilder/Notenanzeige/Notenanzeige8.png" id="29_ululh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ululh"]
 
@@ -118,28 +118,6 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ay5s2"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2i87k"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fwqxx"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pgcdc"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etmil"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7syp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1gr7o"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prg2p"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8cpnb"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdi6n"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8712t"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vme8q"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cmgaf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dsyeu"]
@@ -208,38 +186,36 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ytttq"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uq0mm"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_etmil"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rr4gl"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g7syp"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_25dau"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1gr7o"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5tqk2"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i705i"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ru02i"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hwokx"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q4rks"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2i87k"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s5rmy"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fwqxx"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2dwsf"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prg2p"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1xuh8"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8cpnb"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lkvpo"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tdi6n"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r2pud"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pgcdc"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0acm8"]
-
-[node name="HappyBirthday" type="Control"]
+[node name="Fuchs du hast die Gans gestohlen" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_left = -18.0
 offset_top = 25.0
 offset_right = 22.0
 offset_bottom = 65.0
-script = ExtResource("1_ululh")
+script = ExtResource("1_hwokx")
 
 [node name="Klavier" type="TextureRect" parent="."]
 layout_mode = 0
@@ -361,30 +337,6 @@ text = "F"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_F"]
 stream = ExtResource("7_7jbp7")
-
-[node name="Key_Fis" type="Button" parent="."]
-layout_mode = 0
-offset_left = 561.0
-offset_top = 304.0
-offset_right = 632.0
-offset_bottom = 387.0
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_2i87k")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_fwqxx")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_pgcdc")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_etmil")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g7syp")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_1gr7o")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_prg2p")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_8cpnb")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_tdi6n")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8712t")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_vme8q")
-text = "F#"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_Fis"]
-stream = ExtResource("8_xcbca")
-volume_db = -20.0
 
 [node name="Key_G" type="Button" parent="."]
 layout_mode = 0
@@ -522,80 +474,75 @@ scale = Vector2(0.946043, 0.797101)
 texture = ExtResource("20_ieftd")
 
 [node name="Notenanzeige1" type="Sprite2D" parent="."]
-position = Vector2(292, 207)
+position = Vector2(287, 209)
+scale = Vector2(0.77907, 0.745665)
 texture = ExtResource("21_p2nut")
 
 [node name="Notenanzeige2" type="Sprite2D" parent="."]
-position = Vector2(383, 175)
+position = Vector2(369, 201)
+scale = Vector2(0.819048, 1)
 texture = ExtResource("22_hetrw")
 
 [node name="Notenanzeige3" type="Sprite2D" parent="."]
-position = Vector2(469, 142)
+position = Vector2(457, 173)
+scale = Vector2(0.837423, 0.879747)
 texture = ExtResource("23_4g4m2")
 
 [node name="Notenanzeige4" type="Sprite2D" parent="."]
-position = Vector2(550, 81)
+position = Vector2(538, 152)
+scale = Vector2(0.766667, 0.793413)
 texture = ExtResource("24_6aefp")
 
 [node name="Notenanzeige5" type="Sprite2D" parent="."]
-position = Vector2(624, 24)
+position = Vector2(630, 125)
+scale = Vector2(0.868421, 0.840541)
 texture = ExtResource("25_mmsb2")
 
 [node name="Notenanzeige6" type="Sprite2D" parent="."]
-position = Vector2(698, 7)
+position = Vector2(714, 111)
+scale = Vector2(0.770115, 0.874233)
 texture = ExtResource("26_dsttv")
 
 [node name="Notenanzeige7" type="Sprite2D" parent="."]
-position = Vector2(785, -13)
+position = Vector2(792, 89)
+scale = Vector2(0.639535, 0.925)
 texture = ExtResource("27_0rgt5")
 
 [node name="Sprechblase" type="Label" parent="."]
 layout_mode = 0
-offset_left = 873.0
-offset_top = 70.0
-offset_right = 1142.0
-offset_bottom = 188.0
+offset_left = 882.0
+offset_top = 62.0
+offset_right = 1072.0
+offset_bottom = 149.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
+metadata/_edit_lock_ = true
 
-[node name="Key_D5" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.999
-anchor_top = 0.761
-anchor_right = -0.999
-anchor_bottom = 0.761
-offset_left = 1049.96
-offset_top = 321.56
-offset_right = 1117.96
-offset_bottom = 413.56
-theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_uq0mm")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_rr4gl")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_25dau")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_5tqk2")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ru02i")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_q4rks")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_s5rmy")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_2dwsf")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_1xuh8")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_lkvpo")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_r2pud")
-text = "D5
+[node name="Key_C5" type="Button" parent="."]
+layout_mode = 0
+offset_left = 904.0
+offset_top = 356.0
+offset_right = 981.0
+offset_bottom = 447.0
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_etmil")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_g7syp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1gr7o")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_i705i")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_hwokx")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2i87k")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fwqxx")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_prg2p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8cpnb")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_tdi6n")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_pgcdc")
+text = "C
 "
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_D5"]
-stream = ExtResource("29_ululh")
-volume_db = -14.857
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C5"]
+stream = ExtResource("28_hwokx")
 
-[node name="C5" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_bottom = 1.198
-offset_left = 901.0
-offset_top = 352.0
-offset_right = 987.0
-offset_bottom = 402.08
-theme_override_font_sizes/font_size = 60
-theme_override_styles/normal = SubResource("StyleBoxEmpty_0acm8")
-text = "C5"
+[node name="Notenanzeige8" type="Sprite2D" parent="."]
+position = Vector2(789, 52)
+scale = Vector2(0.708861, 0.809353)
+texture = ExtResource("29_ululh")

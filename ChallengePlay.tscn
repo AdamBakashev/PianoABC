@@ -222,16 +222,18 @@ script = ExtResource("1_qxu2w")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
 layout_mode = 0
-offset_top = 1.00001
-offset_right = 1147.0
-offset_bottom = 603.0
+offset_left = -1.0
+offset_right = 1146.0
+offset_bottom = 600.0
 texture = ExtResource("1_fwi3h")
 expand_mode = 1
+metadata/_edit_lock_ = true
 
 [node name="AussehenKlavier" type="Sprite2D" parent="."]
 position = Vector2(576, 279.543)
 scale = Vector2(0.96, 0.349959)
 texture = ExtResource("2_qxu2w")
+metadata/_edit_lock_ = true
 
 [node name="Key_C" type="Button" parent="."]
 layout_mode = 0
@@ -416,41 +418,49 @@ stream = ExtResource("9_w0jfg")
 position = Vector2(240, 266)
 scale = Vector2(1.01935, 1.08628)
 texture = ExtResource("10_8s1oq")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks2" type="Sprite2D" parent="."]
 position = Vector2(342, 264)
 scale = Vector2(1.00812, 1.12339)
 texture = ExtResource("11_msyin")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks3" type="Sprite2D" parent="."]
 position = Vector2(435, 269)
 scale = Vector2(0.920202, 1.02883)
 texture = ExtResource("12_wss86")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks4" type="Sprite2D" parent="."]
 position = Vector2(522.234, 261)
 scale = Vector2(0.893952, 1.12619)
 texture = ExtResource("13_0ojr5")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks5" type="Sprite2D" parent="."]
 position = Vector2(607, 263)
 scale = Vector2(0.845333, 1.06967)
 texture = ExtResource("14_uc2a5")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks6" type="Sprite2D" parent="."]
 position = Vector2(697.022, 255)
 scale = Vector2(0.796532, 0.975636)
 texture = ExtResource("15_vse7g")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks7" type="Sprite2D" parent="."]
 position = Vector2(784.96, 246)
 scale = Vector2(0.769849, 0.994963)
 texture = ExtResource("16_m3ukn")
+metadata/_edit_lock_ = true
 
 [node name="NotenzettelLinks8" type="Sprite2D" parent="."]
 position = Vector2(887, 250)
 scale = Vector2(0.759524, 0.943793)
 texture = ExtResource("17_cg8r2")
+metadata/_edit_lock_ = true
 
 [node name="NotentafelNote1" type="Sprite2D" parent="."]
 position = Vector2(251, 182)
@@ -461,6 +471,7 @@ texture = ExtResource("18_lcpen")
 position = Vector2(1058.52, 231.926)
 scale = Vector2(0.275877, 0.234412)
 texture = ExtResource("19_edqv7")
+metadata/_edit_lock_ = true
 
 [node name="Notenanzeige2" type="Sprite2D" parent="."]
 position = Vector2(341, 158)
@@ -522,6 +533,7 @@ theme_override_font_sizes/font_size = 30
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
+metadata/_edit_lock_ = true
 
 [node name="ZurueckButton" type="Button" parent="."]
 layout_mode = 0
@@ -542,6 +554,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_x218k")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_73uo7")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ff3rw")
 text = "Zurück"
+metadata/_edit_lock_ = true
 
 [node name="LevelLabel" type="Label" parent="."]
 layout_mode = 0
@@ -551,6 +564,7 @@ offset_right = 1199.0
 offset_bottom = 614.0
 theme_override_colors/font_color = Color(1, 1, 0.933333, 1)
 theme_override_font_sizes/font_size = 40
+metadata/_edit_lock_ = true
 
 [node name="ReadyButton" type="Button" parent="."]
 layout_mode = 0

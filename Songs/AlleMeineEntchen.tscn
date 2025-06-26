@@ -213,7 +213,7 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_45spr"]
 
-[node name="AlleMeineEntschen" type="Control"]
+[node name="HänselUndGrätel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 8.0
@@ -238,10 +238,10 @@ metadata/_edit_lock_ = true
 
 [node name="Key_C" type="Button" parent="."]
 layout_mode = 0
-offset_left = 325.726
-offset_top = 326.61
-offset_right = 582.726
-offset_bottom = 463.61
+offset_left = 334.0
+offset_top = 327.0
+offset_right = 535.0
+offset_bottom = 464.0
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3fda3")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5o2dv")
@@ -285,9 +285,9 @@ stream = ExtResource("2_x4rvq")
 
 [node name="Key_E" type="Button" parent="."]
 layout_mode = 0
-offset_left = 677.115
+offset_left = 706.726
 offset_top = 327.612
-offset_right = 946.115
+offset_right = 905.726
 offset_bottom = 464.612
 theme_override_fonts/font = SubResource("FontVariation_vop05")
 theme_override_font_sizes/font_size = 65
@@ -309,10 +309,10 @@ stream = ExtResource("3_70iln")
 
 [node name="Key_F" type="Button" parent="."]
 layout_mode = 0
-offset_left = 870.576
-offset_top = 322.603
-offset_right = 1152.58
-offset_bottom = 459.603
+offset_left = 915.981
+offset_top = 325.609
+offset_right = 1121.98
+offset_bottom = 462.609
 theme_override_fonts/font = SubResource("FontVariation_3fda3")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xwk1q")
@@ -333,10 +333,10 @@ stream = ExtResource("4_vop05")
 
 [node name="Key_G" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1085.75
-offset_top = 325.609
-offset_right = 1389.75
-offset_bottom = 462.609
+offset_left = 1147.0
+offset_top = 326.0
+offset_right = 1339.0
+offset_bottom = 463.0
 theme_override_fonts/font = SubResource("FontVariation_5o2dv")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_025nw")
@@ -357,10 +357,10 @@ stream = ExtResource("6_70iln")
 
 [node name="Key_A" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1287.11
-offset_top = 325.609
-offset_right = 1636.11
-offset_bottom = 462.609
+offset_left = 1362.0
+offset_top = 326.0
+offset_right = 1534.0
+offset_bottom = 463.0
 theme_override_fonts/font = SubResource("FontVariation_yvoh8")
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_3g7ye")
@@ -381,23 +381,10 @@ stream = ExtResource("5_3fda3")
 
 [node name="Key_B" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1500.31
-offset_top = 331.62
-offset_right = 1771.31
-offset_bottom = 468.62
-theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+offset_left = 1547.69
+offset_top = 329.616
+offset_right = 1722.69
+offset_bottom = 466.616
 theme_override_font_sizes/font_size = 70
 theme_override_styles/focus = SubResource("StyleBoxEmpty_s8ib3")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6k8ek")
@@ -456,60 +443,58 @@ scale = Vector2(1.37761, 0.943793)
 texture = ExtResource("18_jo76f")
 
 [node name="NotentafelNote1" type="Sprite2D" parent="."]
-position = Vector2(444.172, 179.335)
-scale = Vector2(0.492966, 0.356159)
+position = Vector2(513.265, 186.348)
+scale = Vector2(0.542598, 0.510357)
 texture = ExtResource("19_a17yj")
 
 [node name="EulenNeutral" type="Sprite2D" parent="."]
-position = Vector2(1985.94, 154.796)
+position = Vector2(2124.13, 212.397)
 scale = Vector2(0.462449, 0.206737)
 texture = ExtResource("20_3nufd")
-metadata/_edit_lock_ = true
 
 [node name="Notenanzeige2" type="Sprite2D" parent="."]
-position = Vector2(527.084, 168.315)
-scale = Vector2(1, 0.687977)
+position = Vector2(700.804, 171.32)
+scale = Vector2(1.14863, 0.79839)
 texture = ExtResource("21_mgtn2")
 
 [node name="Notenanzeige3" type="Sprite2D" parent="."]
-position = Vector2(602.099, 158.296)
-scale = Vector2(0.923886, 0.662163)
+position = Vector2(863.526, 154.789)
+scale = Vector2(1.0796, 0.754575)
 texture = ExtResource("22_tielr")
 
 [node name="Notenanzeige4" type="Sprite2D" parent="."]
-position = Vector2(692.908, 133.249)
-scale = Vector2(1, 0.583989)
+position = Vector2(1028.31, 132.247)
+scale = Vector2(1.23115, 0.583989)
 texture = ExtResource("23_rglo4")
 
 [node name="Notenanzeige5" type="Sprite2D" parent="."]
-position = Vector2(771.872, 117.219)
-scale = Vector2(1, 0.624557)
+position = Vector2(1192.35, 115.716)
+scale = Vector2(1, 0.741927)
 texture = ExtResource("24_xwk1q")
 
 [node name="Notenanzeige6" type="Sprite2D" parent="."]
-position = Vector2(848.861, 106.198)
-scale = Vector2(1, 0.616783)
+position = Vector2(1360.15, 106.198)
+scale = Vector2(1, 0.725282)
 texture = ExtResource("25_87keu")
 
 [node name="Notenanzeige7" type="Sprite2D" parent="."]
-position = Vector2(933.747, 91.1704)
-scale = Vector2(1, 0.489744)
+position = Vector2(1529.37, 91.1704)
+scale = Vector2(1.08534, 0.583004)
 texture = ExtResource("26_hyyo0")
 
 [node name="Notenanzeige8" type="Sprite2D" parent="."]
-position = Vector2(931.773, 70.1311)
-scale = Vector2(1, 0.462628)
+position = Vector2(1518.08, 64.1198)
+scale = Vector2(1, 0.631009)
 texture = ExtResource("27_k1skw")
 
 [node name="TextureRect3" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 1524.0
-offset_top = -17.0318
-offset_right = 2118.0
-offset_bottom = 139.968
+offset_left = 1672.06
+offset_top = 35.0655
+offset_right = 2266.06
+offset_bottom = 192.065
 texture = ExtResource("28_l7rnd")
 expand_mode = 1
-metadata/_edit_lock_ = true
 
 [node name="Sprechblase" type="Label" parent="."]
 layout_mode = 1
@@ -518,10 +503,10 @@ anchor_left = 185.899
 anchor_top = -3.625
 anchor_right = 234.548
 anchor_bottom = 18.744
-offset_left = 196.712
-offset_top = 32.0056
-offset_right = 133.52
-offset_bottom = -32.9465
+offset_left = 368.458
+offset_top = 77.0899
+offset_right = 305.266
+offset_bottom = 12.1378
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 50
 horizontal_alignment = 3
@@ -530,10 +515,10 @@ autowrap_mode = 2
 
 [node name="ZurueckButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 9.87048
-offset_top = 515.964
-offset_right = 305.87
-offset_bottom = 613.964
+offset_left = 51.0
+offset_top = 513.0
+offset_right = 402.0
+offset_bottom = 616.0
 theme_override_font_sizes/font_size = 75
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6vidi")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jsujs")
