@@ -1,6 +1,6 @@
-[gd_scene load_steps=107 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=101 format=3 uid="uid://dx7elbf12mq5w"]
 
-[ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://challengePlay.gd" id="1_qxu2w"]
+[ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://Skripte/challengePlay.gd" id="1_qxu2w"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_qxu2w"]
 [ext_resource type="AudioStream" uid="uid://lqsil64isqse" path="res://Sound/piano-note-a4-bright-one-shot_91bpm_A_minor.wav" id="8_8s1oq"]
 [ext_resource type="AudioStream" uid="uid://d1nhe6i7kirkp" path="res://Sound/piano-note-b4-bright-one-shot_100bpm_B_minor.wav" id="9_w0jfg"]
@@ -176,12 +176,6 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5da0"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwkby"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jj44o"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e0vrb"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8m84x"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_17qtq"]
@@ -189,12 +183,6 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ym76"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_faus3"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tlihw"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x218k"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_73uo7"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ff3rw"]
 
@@ -427,16 +415,10 @@ offset_top = 493.0
 offset_right = 277.0
 offset_bottom = 596.0
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_uwkby")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_jj44o")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_e0vrb")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_8m84x")
 theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_17qtq")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2ym76")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_faus3")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_tlihw")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_x218k")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_73uo7")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ff3rw")
 text = "Zurück"
 icon = ExtResource("29_8s1oq")

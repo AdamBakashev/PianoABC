@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bdjed6b8p2l2v"]
+[gd_scene load_steps=13 format=3 uid="uid://bdjed6b8p2l2v"]
 
 [ext_resource type="Script" uid="uid://ca6aqu3vw0w4m" path="res://Skripte/free_play.gd" id="1_036nu"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="1_sjbjr"]
@@ -6,6 +6,14 @@
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="3_savpf"]
 [ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="4_6q43m"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="5_m5u31"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_036nu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_savpf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6q43m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m5u31"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cret5"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -39,6 +47,10 @@ scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_savpf")
 theme_override_font_sizes/font_size = 53
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_036nu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_savpf")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6q43m")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m5u31")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cret5")
 text = "Spielen"
 icon = ExtResource("4_6q43m")

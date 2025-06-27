@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cdv7cm58lc4u3"]
+[gd_scene load_steps=19 format=3 uid="uid://cdv7cm58lc4u3"]
 
 [ext_resource type="Script" uid="uid://bk0cwgkifbsg7" path="res://Skripte/main_menu.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="2_iwfq2"]
@@ -17,6 +17,18 @@ bg_color = Color(0.66, 0.60302, 0.1716, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jix8l"]
 bg_color = Color(0.95, 0.408183, 0.3895, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u7cqb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_afec1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_31qfy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qie43"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e2xy7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fimr5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e2xy7"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -38,10 +50,10 @@ script = ExtResource("1_06t4h")
 [node name="TextureRect2" type="TextureRect" parent="."]
 z_index = -1
 layout_mode = 0
-offset_left = 2.0
-offset_top = -6.0
-offset_right = 580.0
-offset_bottom = 572.0
+offset_left = -1.0
+offset_top = -9.0
+offset_right = 577.0
+offset_bottom = 569.0
 texture = ExtResource("2_iwfq2")
 expand_mode = 4
 
@@ -97,7 +109,7 @@ scale = Vector2(0.145073, 0.148613)
 texture = ExtResource("5_7r1g0")
 
 [node name="IconStartseite" type="Sprite2D" parent="."]
-position = Vector2(536, 29)
+position = Vector2(508, -71.5)
 scale = Vector2(0.689253, 0.67)
 texture = ExtResource("5_iwfq2")
 
@@ -108,15 +120,22 @@ position = Vector2(294.5, 183.5)
 scale = Vector2(1.53649, 1.0482)
 texture = ExtResource("7_cqjrg")
 
-[node name="ZurückZumHauptmenü" type="Button" parent="."]
+[node name="EinstellungButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = -10.0
-offset_top = -8.5
-offset_right = 100.0
-offset_bottom = 91.5
+offset_left = 496.5
+offset_top = -4.0
+offset_right = 606.5
+offset_bottom = 86.0
+scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_font_sizes/font_size = 53
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_u7cqb")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_afec1")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_31qfy")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_qie43")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_e2xy7")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_fimr5")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e2xy7")
 icon = ExtResource("8_e2xy7")
 
@@ -126,4 +145,4 @@ offset_left = 192.0
 offset_top = 55.5
 offset_right = 379.0
 offset_bottom = 78.5
-text = "Lernen mit Beethuuven!"
+text = "Lernen mit Beethooven!"

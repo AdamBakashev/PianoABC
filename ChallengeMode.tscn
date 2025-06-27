@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ctgcs8uq0bf5n"]
+[gd_scene load_steps=12 format=3 uid="uid://ctgcs8uq0bf5n"]
 
 [ext_resource type="Script" uid="uid://ccii2ki5gfd1a" path="res://Skripte/challenge_mode.gd" id="1_f1fa0"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="1_srag6"]
@@ -9,6 +9,14 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1fa0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1fa0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s6soh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0jui3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rw4c3"]
 
 [node name="challengeRoot" type="Node2D"]
 script = ExtResource("1_f1fa0")
@@ -72,6 +80,10 @@ scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_5vodu")
 theme_override_font_sizes/font_size = 53
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_f1fa0")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_s6soh")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_0jui3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_rw4c3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_f1fa0")
 text = "Spielen"
 icon = ExtResource("5_s6soh")

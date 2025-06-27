@@ -1,6 +1,6 @@
-[gd_scene load_steps=103 format=3 uid="uid://dbtlk4dwefde8"]
+[gd_scene load_steps=97 format=3 uid="uid://dbtlk4dwefde8"]
 
-[ext_resource type="Script" uid="uid://dawqjv2qnjnxw" path="res://freeplaykeyboard.gd" id="1_gu25d"]
+[ext_resource type="Script" uid="uid://dawqjv2qnjnxw" path="res://Skripte/freeplaykeyboard.gd" id="1_gu25d"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="1_x0slp"]
 [ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="2_gu25d"]
 [ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="3_dxb2e"]
@@ -173,12 +173,6 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sbdvf"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cx4se"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_beml7"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqikk"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_irubt"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lxujq"]
@@ -186,12 +180,6 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_57ids"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h80v6"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8wcf"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwwd2"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_urhpw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ruwb6"]
 
@@ -210,6 +198,7 @@ scale = Vector2(0.96, 0.672381)
 texture = ExtResource("1_x0slp")
 
 [node name="Key_C" type="Button" parent="."]
+layout_mode = 0
 offset_left = 175.0
 offset_top = 321.0
 offset_right = 265.0
@@ -234,6 +223,7 @@ text = "C"
 stream = ExtResource("2_gu25d")
 
 [node name="Key_D" type="Button" parent="."]
+layout_mode = 0
 offset_left = 274.0
 offset_top = 314.0
 offset_right = 361.0
@@ -258,6 +248,7 @@ text = "D"
 stream = ExtResource("3_dxb2e")
 
 [node name="Key_E" type="Button" parent="."]
+layout_mode = 0
 offset_left = 373.0
 offset_top = 323.0
 offset_right = 462.0
@@ -283,6 +274,7 @@ text = "E"
 stream = ExtResource("4_mp6nh")
 
 [node name="Key_F" type="Button" parent="."]
+layout_mode = 0
 offset_left = 472.0
 offset_top = 327.0
 offset_right = 564.0
@@ -308,6 +300,7 @@ text = "F"
 stream = ExtResource("5_xh81t")
 
 [node name="Key_G" type="Button" parent="."]
+layout_mode = 0
 offset_left = 580.0
 offset_top = 324.0
 offset_right = 670.0
@@ -333,6 +326,7 @@ text = "G"
 stream = ExtResource("6_m4oky")
 
 [node name="Key_A" type="Button" parent="."]
+layout_mode = 0
 offset_left = 681.0
 offset_top = 319.0
 offset_right = 775.0
@@ -358,6 +352,7 @@ text = "A"
 stream = ExtResource("7_kgdgt")
 
 [node name="Key_B" type="Button" parent="."]
+layout_mode = 0
 offset_left = 787.0
 offset_top = 317.0
 offset_right = 887.0
@@ -382,21 +377,16 @@ text = "B "
 stream = ExtResource("8_sl1em")
 
 [node name="ZurueckButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 26.0
 offset_top = 493.0
 offset_right = 277.0
 offset_bottom = 596.0
 theme_override_font_sizes/font_size = 40
-theme_override_styles/focus = SubResource("StyleBoxEmpty_cx4se")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_beml7")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_rqikk")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_irubt")
 theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lxujq")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_57ids")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_h80v6")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_e8wcf")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_dwwd2")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_urhpw")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ruwb6")
 text = "Zurück"
 icon = ExtResource("9_q2jtm")

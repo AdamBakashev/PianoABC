@@ -72,7 +72,7 @@ func _reset_button_style(button):
 
 func show_congratulations():
 	var popup = AcceptDialog.new()
-	popup.dialog_text = "🎉 Super! Du hast Alle meine Entchen gespielt!"
+	popup.dialog_text = "🎉 Super! Du hast 'Alle meine Entchen' gespielt!"
 	add_child(popup)
 	popup.popup_centered()
 

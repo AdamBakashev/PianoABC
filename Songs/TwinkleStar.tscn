@@ -1,6 +1,6 @@
 [gd_scene load_steps=107 format=3 uid="uid://bo1wtt3hp84ab"]
 
-[ext_resource type="Script" uid="uid://dvsmxuodijpee" path="res://twinkleStar.gd" id="1_1fct7"]
+[ext_resource type="Script" uid="uid://dvsmxuodijpee" path="res://Songs/twinkleStar.gd" id="1_1fct7"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="1_ewogw"]
 [ext_resource type="Texture2D" uid="uid://bi6c8676vpdki" path="res://Bilder/Projekt Klavierspiel/Notentafel/Notentafel.png" id="2_1fct7"]
 [ext_resource type="Texture2D" uid="uid://buoteby2kjmde" path="res://Bilder/EulenNeutral.png" id="3_qock3"]
