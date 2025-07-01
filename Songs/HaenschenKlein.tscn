@@ -232,10 +232,10 @@ metadata/_edit_lock_ = true
 
 [node name="TextureRect3" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 893.0
-offset_top = 58.0
-offset_right = 1087.0
-offset_bottom = 257.0
+offset_left = 892.0
+offset_top = 66.0
+offset_right = 1086.0
+offset_bottom = 265.0
 texture = ExtResource("4_frmgl")
 expand_mode = 1
 
@@ -479,10 +479,10 @@ expand_mode = 1
 
 [node name="Sprechblase" type="Label" parent="."]
 layout_mode = 0
-offset_left = 846.0
-offset_top = 23.0
-offset_right = 994.0
-offset_bottom = 93.0
+offset_left = 851.0
+offset_top = 29.0
+offset_right = 999.0
+offset_bottom = 99.0
 theme_override_colors/font_color = Color(0.027451, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 horizontal_alignment = 3

@@ -13,3 +13,7 @@ config_version=5
 config/name="PianoABC"
 run/main_scene="uid://cdv7cm58lc4u3"
 config/features=PackedStringArray("4.4", "Forward Plus")
+
+[autoload]
+
+MenuMusic="*res://Skripte/MenuMusicManager.gd"

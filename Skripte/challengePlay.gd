@@ -4,6 +4,7 @@ extends Control
 @onready var level_label: Label = $LevelLabel
 @onready var ready_button: Button = $ReadyButton
 @onready var zurueck_button: Button = $ZurueckButton
+@onready var fail_sound: AudioStreamPlayer = $FailSound  # <-- Hinzugefügt
 
 @onready var key_notes := {
 	"C": $Key_C/AudioStreamPlayer,
@@ -36,6 +37,9 @@ func _ready():
 
 	update_level_label()
 	start_level()
+	
+	if MenuMusic.music_player.playing:
+		MenuMusic.music_player.stop()
 
 func update_level_label():
 	level_label.text = "Aktuelles Level: %d" % (current_level + 1)
@@ -74,7 +78,8 @@ func _on_key_pressed(note: String):
 	var expected_note = song[current_note_index]
 
 	if note != expected_note:
-		sprechblase.text = "❌Falsch!Zurück zu Level 1"
+		fail_sound.play()  # <-- Fehlersound abspielen
+		sprechblase.text = "❌Falsch! Zurück zu Level 1"
 		player_input_enabled = false
 		current_level = 0
 		await get_tree().create_timer(2.0).timeout
@@ -105,8 +110,6 @@ func reset_button_style(button):
 func _on_zurueck_pressed():
 	get_tree().change_scene_to_file("res://ChallengeMode.tscn")
 
-
-
 func generate_melodic_sequence(length: int) -> Array:
 	var melody := []
 	var index = randi() % note_names.size()
@@ -123,7 +126,6 @@ func generate_melodic_sequence(length: int) -> Array:
 			last_note = current_note
 
 		if repeat_count > 3:
-			# Erzwinge Wechsel
 			var step = 1 if randi() % 2 == 0 else -1
 			index = clamp(index + step, 0, note_names.size() - 1)
 			current_note = note_names[index]
@@ -132,7 +134,6 @@ func generate_melodic_sequence(length: int) -> Array:
 
 		melody.append(current_note)
 
-		# Normale Bewegung, leichte Tendenz nach oben
 		var step = [ -1, 1, 1, 0, 1 ][randi() % 5]
 		index = clamp(index + step, 0, note_names.size() - 1)
 

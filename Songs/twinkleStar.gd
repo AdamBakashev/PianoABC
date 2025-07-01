@@ -31,6 +31,9 @@ func _ready():
 	_update_highlighted_key()
 	
 	zurueck_button.pressed.connect(_on_zurueck_pressed)
+	
+	if MenuMusic.music_player.playing:
+		MenuMusic.music_player.stop()
 
 func _on_key_pressed(key_name):
 	var expected_note = song_notes[current_note_index]

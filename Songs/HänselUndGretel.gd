@@ -32,6 +32,9 @@ func _ready():
 	_update_highlighted_key()
 	
 	zurueck_button.pressed.connect(_on_zurueck_pressed)
+	
+	if MenuMusic.music_player.playing:
+		MenuMusic.music_player.stop()
 
 func _on_key_pressed(key_name):
 	var expected_note = song_notes[current_note_index]
@@ -70,11 +73,13 @@ func _reset_button_style(button):
 	button.remove_theme_color_override("font_color")
 	button.remove_theme_color_override("button_color")
 
+
 func show_congratulations():
 	var popup = AcceptDialog.new()
 	popup.dialog_text = "🎉 Super! Du hast 'Hänsel und Gretel' gespielt!"
 	add_child(popup)
 	popup.popup_centered()
+
 
 func _on_zurueck_pressed():
 	get_tree().change_scene_to_file("res://LearnMode.tscn")

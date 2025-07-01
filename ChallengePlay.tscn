@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=102 format=3 uid="uid://dx7elbf12mq5w"]
 
 [ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://Skripte/challengePlay.gd" id="1_qxu2w"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_qxu2w"]
@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://babsbqmb1yjpv" path="res://Sound/piano-note-g4-bright-one-shot_92bpm_G_minor.wav" id="10_msyin"]
 [ext_resource type="Texture2D" uid="uid://dpv4rnl35tgy2" path="res://Bilder/Notenanzeige/Notenanzeige.png" id="11_0x0pc"]
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="12_wie2i"]
+[ext_resource type="AudioStream" uid="uid://c4lpaw3weiof7" path="res://Sound/ChallengeModeFailedSound (1) 15.12.02.wav" id="14_iectq"]
 [ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="14_wss86"]
 [ext_resource type="AudioStream" uid="uid://rm54thua6l4l" path="res://Sound/piano-note-d4-bright-one-shot_82bpm_D_major.wav" id="16_0ojr5"]
 [ext_resource type="AudioStream" uid="uid://b8bii54snnxk2" path="res://Sound/piano-note-c4-bright-one-shot_91bpm_C_major.wav" id="18_uc2a5"]
@@ -445,3 +446,6 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cg8r2")
 text = "Starte das Spiel!"
 icon = ExtResource("30_msyin")
+
+[node name="FailSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_iectq")

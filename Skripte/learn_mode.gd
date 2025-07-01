@@ -1,5 +1,13 @@
 extends Control
 
+
+@onready var click_sound: AudioStreamPlayer = $ButtonClickSound
+
+func _on_learn_mode_pressed():
+	click_sound.play()
+	get_tree().change_scene_to_file("res://LearnMode.tscn")
+
+
 func _ready():
 	$VBoxContainer/Button.connect("pressed", Callable(self, "_on_entchen_pressed"))
 	$VBoxContainer/Button2.connect("pressed", Callable(self, "_on_jakob_pressed"))
@@ -7,6 +15,9 @@ func _ready():
 	$VBoxContainer/Button4.connect("pressed", Callable(self, "_on_haenschen_pressed"))
 	$VBoxContainer/Button5.connect("pressed", Callable(self, "_on_twinkle_pressed"))
 	$ZurückZumHauptmenü.connect("pressed", Callable(self, "_on_back_pressed"))
+	
+	if not MenuMusic.music_player.playing:
+		MenuMusic.music_player.play()
 
 func _on_entchen_pressed():
 	get_tree().change_scene_to_file("res://Songs/AlleMeineEntchen.tscn")
