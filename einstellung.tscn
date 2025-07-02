@@ -70,6 +70,7 @@ theme_override_font_sizes/font_size = 29
 text = "Developed by: ATEEE"
 
 [node name="Label2" type="Label" parent="."]
+layout_mode = 0
 offset_left = 747.0
 offset_top = 260.0
 offset_right = 954.0
