@@ -1,4 +1,4 @@
-[gd_scene load_steps=121 format=3 uid="uid://dx7elbf12mq5w"]
+[gd_scene load_steps=134 format=3 uid="uid://dx7elbf12mq5w"]
 
 [ext_resource type="Script" uid="uid://dsbdxeadkghcd" path="res://Skripte/challengePlay.gd" id="1_qxu2w"]
 [ext_resource type="Texture2D" uid="uid://ds1qbnmnwe04e" path="res://Bilder/Klavier/Klavier.png" id="3_0ojr5"]
@@ -17,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://bxkop4hr5bxsc" path="res://Sound/piano-note-f4-bright-one-shot_91bpm_F_minor.wav" id="12_wie2i"]
 [ext_resource type="Texture2D" uid="uid://d2pi7yn8ixe48" path="res://Bilder/Klavier/KlaviertasteLinks9.png" id="12_wyxod"]
 [ext_resource type="Texture2D" uid="uid://dhf46hekxmwcd" path="res://Bilder/Klavier/KlaviertasteLinks11.png" id="13_e4wgm"]
+[ext_resource type="Texture2D" uid="uid://b5wehg5t4kgw0" path="res://Bilder/Klavier/KlaviertasteLinks10.png" id="13_uc2a5"]
 [ext_resource type="Texture2D" uid="uid://h7wqgxurh7ip" path="res://Bilder/Klavier/KlaviertasteLinks12.png" id="14_1g13b"]
 [ext_resource type="AudioStream" uid="uid://c4lpaw3weiof7" path="res://Sound/ChallengeModeFailedSound (1) 15.12.02.wav" id="14_iectq"]
 [ext_resource type="AudioStream" uid="uid://dxi8lkofh3t87" path="res://Sound/piano-note-e4-bright-one-shot_81bpm_E_major.wav" id="14_wss86"]
@@ -31,6 +32,7 @@
 [ext_resource type="Texture2D" uid="uid://dpaaljuff32gv" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts3.png" id="20_dmigv"]
 [ext_resource type="Texture2D" uid="uid://hm6xueil3x06" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts2.png" id="21_oyo54"]
 [ext_resource type="Texture2D" uid="uid://8cfme10ihqra" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts1.png" id="22_u22v3"]
+[ext_resource type="AudioStream" uid="uid://btftdpqa5v8oa" path="res://Sound/C5 right one.wav" id="29_0ojr5"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="29_8s1oq"]
 [ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="30_msyin"]
 
@@ -196,6 +198,28 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5da0"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8xlp0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0oj8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_by4h8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85x4v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fkvya"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4778d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bafr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_go88j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2if8f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p2d00"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wud7d"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8m84x"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_17qtq"]
@@ -283,7 +307,7 @@ texture = ExtResource("13_e4wgm")
 z_index = -2
 position = Vector2(356.446, -104.46)
 scale = Vector2(1.78041, 0.967001)
-texture = ExtResource("13_e4wgm")
+texture = ExtResource("13_uc2a5")
 
 [node name="Sprote3" type="Sprite2D" parent="keyboard"]
 z_index = -1
@@ -346,7 +370,7 @@ offset_left = 175.0
 offset_top = 321.0
 offset_right = 265.0
 offset_bottom = 430.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dmigv")
@@ -371,7 +395,7 @@ offset_left = 274.0
 offset_top = 314.0
 offset_right = 361.0
 offset_bottom = 432.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_e0u2o")
@@ -396,7 +420,7 @@ offset_left = 373.0
 offset_top = 323.0
 offset_right = 462.0
 offset_bottom = 427.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_2kfv7")
 theme_override_font_sizes/font_size = 65
@@ -422,7 +446,7 @@ offset_left = 472.0
 offset_top = 327.0
 offset_right = 564.0
 offset_bottom = 424.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_bgata")
 theme_override_font_sizes/font_size = 65
@@ -448,7 +472,7 @@ offset_left = 580.0
 offset_top = 324.0
 offset_right = 670.0
 offset_bottom = 423.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_swghf")
 theme_override_font_sizes/font_size = 65
@@ -474,7 +498,7 @@ offset_left = 681.0
 offset_top = 319.0
 offset_right = 775.0
 offset_bottom = 423.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = SubResource("FontVariation_85x4v")
 theme_override_font_sizes/font_size = 65
@@ -494,13 +518,13 @@ text = "A"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
 stream = ExtResource("8_8s1oq")
 
-[node name="Key_B" type="Button" parent="."]
+[node name="Key_H" type="Button" parent="."]
 layout_mode = 0
 offset_left = 787.0
 offset_top = 317.0
 offset_right = 887.0
 offset_bottom = 430.0
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 70
 theme_override_styles/focus = SubResource("StyleBoxEmpty_swghf")
@@ -514,10 +538,35 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_oh51v")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_n56ng")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_dutt0")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_j5da0")
-text = "B "
+text = "H"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_H"]
 stream = ExtResource("9_w0jfg")
+
+[node name="Key_C5" type="Button" parent="."]
+offset_left = 883.0
+offset_top = 305.0
+offset_right = 981.0
+offset_bottom = 437.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8xlp0")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_0oj8a")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_by4h8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_85x4v")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_fkvya")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_4778d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6bafr")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_go88j")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2if8f")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_p2d00")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wud7d")
+text = "C5
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C5"]
+stream = ExtResource("29_0ojr5")
 
 [node name="EulenNeutral" type="Sprite2D" parent="."]
 position = Vector2(821, 101)

@@ -13,10 +13,11 @@ extends Control
 	"F": $Key_F/AudioStreamPlayer,
 	"G": $Key_G/AudioStreamPlayer,
 	"A": $Key_A/AudioStreamPlayer,
-	"B": $Key_B/AudioStreamPlayer
+	"H": $Key_H/AudioStreamPlayer,
+	"C5": $Key_C5/AudioStreamPlayer,
 }
 
-var note_names = ["C", "D", "E", "F", "G", "A", "B"]
+var note_names = ["C", "D", "E", "F", "G", "A", "H"]
 var level_lengths = [5, 7, 9, 12, 15]
 var level_speeds = [1.0, 0.9, 0.75, 0.6, 0.45]
 

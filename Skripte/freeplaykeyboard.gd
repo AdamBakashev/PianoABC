@@ -7,7 +7,8 @@ extends Control
 	"Key_F": $Key_F/AudioStreamPlayer,
 	"Key_G": $Key_G/AudioStreamPlayer,
 	"Key_A": $Key_A/AudioStreamPlayer,
-	"Key_B": $Key_B/AudioStreamPlayer
+	"Key_B": $Key_B/AudioStreamPlayer,
+	"Key_C5": $Key_C5/AudioStreamPlayer,
 }
 
 @onready var zurueck_button: Button = $ZurueckButton

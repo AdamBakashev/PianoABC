@@ -1,4 +1,4 @@
-[gd_scene load_steps=138 format=3 uid="uid://calsqkw411u3n"]
+[gd_scene load_steps=144 format=3 uid="uid://calsqkw411u3n"]
 
 [ext_resource type="Script" uid="uid://sr3b18vguexa" path="res://Songs/JingleBells.gd" id="1_5fdn4"]
 [ext_resource type="Texture2D" uid="uid://ds1qbnmnwe04e" path="res://Bilder/Klavier/Klavier.png" id="2_6w6xg"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://dhf46hekxmwcd" path="res://Bilder/Klavier/KlaviertasteLinks11.png" id="12_gfc2l"]
 [ext_resource type="Texture2D" uid="uid://dfe643fgvgvt5" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks1.png" id="13_0jtle"]
 [ext_resource type="Texture2D" uid="uid://h7wqgxurh7ip" path="res://Bilder/Klavier/KlaviertasteLinks12.png" id="13_11vlg"]
+[ext_resource type="Texture2D" uid="uid://b5wehg5t4kgw0" path="res://Bilder/Klavier/KlaviertasteLinks10.png" id="13_31fpw"]
 [ext_resource type="Texture2D" uid="uid://bdi5eqnguspeo" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts9.png" id="14_axxtx"]
 [ext_resource type="Texture2D" uid="uid://df6fwv86jnn4t" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks2.png" id="14_k23mx"]
 [ext_resource type="Texture2D" uid="uid://dfdf182f322e0" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks3.png" id="15_d7h2y"]
@@ -49,10 +50,10 @@
 [ext_resource type="Texture2D" uid="uid://cvnytwwddu8g8" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige7.png" id="27_rmo0w"]
 [ext_resource type="Texture2D" uid="uid://jcmssrw0r32t" path="res://Bilder/sprechblase-removebg-preview.png" id="27_yakdn"]
 [ext_resource type="Texture2D" uid="uid://bij41k6o0t0yb" path="res://Bilder/Projekt Klavierspiel/Notentafel/NotentafelNote1.png" id="28_j5pkl"]
-[ext_resource type="AudioStream" uid="uid://b7gjpt2ed32ux" path="res://Sound/single-piano-note-c5_60bpm_A_major.wav" id="28_yt2ek"]
 [ext_resource type="Texture2D" uid="uid://cmnt1w72yg2kt" path="res://Bilder/Notenanzeige/Notenanzeige8.png" id="29_eksr2"]
 [ext_resource type="Texture2D" uid="uid://bvdieuocopw7g" path="res://Bilder/Projekt Klavierspiel/Notenanzeige/Notenanzeige8.png" id="30_ubf4t"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="41_badth"]
+[ext_resource type="AudioStream" uid="uid://btftdpqa5v8oa" path="res://Sound/C5 right one.wav" id="42_31fpw"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngup7"]
 
@@ -208,19 +209,29 @@
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bg4ao"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_71rt3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d00p0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aauak"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usy41"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ll34x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ak2n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xvqec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1t8n1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gfc2l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_11vlg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_axxtx"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5or6b"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vn5lc"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ab0an"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pd2px"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dspkp"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4gjhi"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e5oen"]
 
 [node name="HaenschenKlein" type="Control"]
 layout_mode = 3
@@ -300,7 +311,7 @@ texture = ExtResource("12_gfc2l")
 z_index = -2
 position = Vector2(356.446, -104.46)
 scale = Vector2(1.78041, 0.967001)
-texture = ExtResource("12_gfc2l")
+texture = ExtResource("13_31fpw")
 
 [node name="Sprote3" type="Sprite2D" parent="keyboard"]
 z_index = -1
@@ -448,6 +459,8 @@ offset_left = 172.0
 offset_top = 347.0
 offset_right = 271.0
 offset_bottom = 476.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ngup7")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f8ut3")
@@ -471,6 +484,8 @@ offset_left = 280.0
 offset_top = 346.0
 offset_right = 365.0
 offset_bottom = 476.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_ehj6p")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_tsynp")
@@ -494,6 +509,8 @@ offset_left = 378.0
 offset_top = 350.0
 offset_right = 466.0
 offset_bottom = 470.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_u28sm")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_q1euv")
@@ -517,6 +534,8 @@ offset_left = 477.0
 offset_top = 351.0
 offset_right = 571.0
 offset_bottom = 476.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_vgs5a")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_uwyji")
@@ -540,6 +559,8 @@ offset_left = 585.0
 offset_top = 358.0
 offset_right = 672.0
 offset_bottom = 473.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1y62p")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_j0kh6")
@@ -563,6 +584,8 @@ offset_left = 693.0
 offset_top = 350.0
 offset_right = 787.0
 offset_bottom = 478.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_hm1yi")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_0nj5i")
@@ -586,6 +609,8 @@ offset_left = 794.0
 offset_top = 345.0
 offset_right = 886.0
 offset_bottom = 487.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_whkt1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_eulin")
@@ -598,10 +623,35 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_80hyx")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_b1qbg")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_npywp")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bg4ao")
-text = "B"
+text = "H"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
 stream = ExtResource("11_04ht6")
+
+[node name="Key_C5" type="Button" parent="."]
+offset_left = 890.0
+offset_top = 342.0
+offset_right = 988.0
+offset_bottom = 489.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_71rt3")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_d00p0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_aauak")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_usy41")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ll34x")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_7ak2n")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xvqec")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_1t8n1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_gfc2l")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_11vlg")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_axxtx")
+text = "C5
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C5"]
+stream = ExtResource("42_31fpw")
 
 [node name="ZurueckButton" type="Button" parent="."]
 layout_mode = 0
@@ -615,7 +665,7 @@ text = "Zurück"
 icon = ExtResource("41_badth")
 
 [node name="Sprechblase-removebg-preview" type="Sprite2D" parent="."]
-position = Vector2(953, 100)
+position = Vector2(980, 91)
 scale = Vector2(0.517979, 0.401639)
 texture = ExtResource("27_yakdn")
 
@@ -721,34 +771,14 @@ texture = ExtResource("27_rmo0w")
 
 [node name="Sprechblase" type="Label" parent="."]
 layout_mode = 0
-offset_left = 873.0
-offset_top = 70.0
-offset_right = 1142.0
-offset_bottom = 188.0
+offset_left = 898.0
+offset_top = 59.0
+offset_right = 1017.0
+offset_bottom = 114.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 
-[node name="Key_C5" type="Button" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 881.0
-offset_top = 359.0
-offset_right = 969.0
-offset_bottom = 466.0
-theme_override_font_sizes/font_size = 70
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vn5lc")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ab0an")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_pd2px")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_dspkp")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_4gjhi")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_e5oen")
-text = "C"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C5"]
-stream = ExtResource("28_yt2ek")
-
 [node name="Notenanzeige8" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(782, 69)
-scale = Vector2(0.778481, 0.866906)
+position = Vector2(850, 73)
+scale = Vector2(0.591772, 0.735611)
 texture = ExtResource("29_eksr2")

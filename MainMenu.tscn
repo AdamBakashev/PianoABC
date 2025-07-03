@@ -1,13 +1,12 @@
-[gd_scene load_steps=20 format=3 uid="uid://cdv7cm58lc4u3"]
+[gd_scene load_steps=19 format=3 uid="uid://cdv7cm58lc4u3"]
 
 [ext_resource type="Script" uid="uid://bk0cwgkifbsg7" path="res://Skripte/main_menu.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://qybfpsj2pw0c" path="res://Bilder/hintergrund/Hintergrund.png" id="2_iwfq2"]
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="3_fu7sn"]
-[ext_resource type="FontFile" uid="uid://kobv6njcoygs" path="res://fonts/Lato/Lato-Bold.ttf" id="4_jix8l"]
 [ext_resource type="Texture2D" uid="uid://cvsgphaai3aug" path="res://Bilder/Eule/EuleRichtig.png" id="5_7r1g0"]
 [ext_resource type="Texture2D" uid="uid://cb7a2h8vipaqe" path="res://Bilder/Projekt Klavierspiel/Icon/IconStartseite.png" id="5_iwfq2"]
 [ext_resource type="Texture2D" uid="uid://bwvrywgvqle6f" path="res://Bilder/Icon/IconMenüLeisteEingeklappt.png" id="7_cqjrg"]
-[ext_resource type="Texture2D" uid="uid://ccky1b14v5cjv" path="res://Bilder/Icon/IconEinstellungen.png" id="8_e2xy7"]
+[ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="7_e2xy7"]
 [ext_resource type="AudioStream" uid="uid://dvupwbhbd46gx" path="res://Sound/ButtonPressed.ogg" id="9_fimr5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qoqlk"]
@@ -70,7 +69,6 @@ alignment = 1
 [node name="LearnModeButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.04, 0.006, 0, 1)
-theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qoqlk")
 text = "Lern Modus
 "
@@ -78,15 +76,12 @@ text = "Lern Modus
 [node name="FreePlayButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0.00784314, 0, 1)
-theme_override_fonts/font = ExtResource("3_fu7sn")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Freies  spielen"
 
 [node name="ChallengeButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("4_jix8l")
-theme_override_font_sizes/font_size = 16
 theme_override_styles/normal = SubResource("StyleBoxFlat_jix8l")
 text = "Challenge Modus
 "
@@ -123,10 +118,10 @@ texture = ExtResource("7_cqjrg")
 
 [node name="EinstellungButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 496.5
-offset_top = -4.0
-offset_right = 606.5
-offset_bottom = 86.0
+offset_left = 482.5
+offset_top = -8.5
+offset_right = 611.5
+offset_bottom = 124.5
 scale = Vector2(0.75, 0.75)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_fu7sn")
@@ -138,7 +133,7 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_qie43")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_e2xy7")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_fimr5")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e2xy7")
-icon = ExtResource("8_e2xy7")
+icon = ExtResource("7_e2xy7")
 
 [node name="ButtonClickSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_fimr5")

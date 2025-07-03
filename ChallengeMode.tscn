@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://gwac28susx48" path="res://fonts/Lato/Lato-Black.ttf" id="2_5vodu"]
 [ext_resource type="Texture2D" uid="uid://bwvrywgvqle6f" path="res://Bilder/Icon/IconMenüLeisteEingeklappt.png" id="3_f1fa0"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="3_mcr1q"]
-[ext_resource type="Texture2D" uid="uid://4xjaqx05vnag" path="res://Bilder/Icon/IconNotenAusschalten.png" id="5_s6soh"]
+[ext_resource type="Texture2D" uid="uid://diyx53nari1jk" path="res://Bilder/Startbildschirm/StartbildschirmStartbutton.png" id="6_f1fa0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f1fa0"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -86,7 +86,7 @@ theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_0jui3")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_rw4c3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_f1fa0")
 text = "Spielen"
-icon = ExtResource("5_s6soh")
+icon = ExtResource("6_f1fa0")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true

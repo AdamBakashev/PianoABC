@@ -1,4 +1,4 @@
-[gd_scene load_steps=146 format=3 uid="uid://b8a7rge6iayft"]
+[gd_scene load_steps=159 format=3 uid="uid://b8a7rge6iayft"]
 
 [ext_resource type="Script" uid="uid://bwqc0kpauy565" path="res://Songs/HänselUndGretel.gd" id="1_f8ut3"]
 [ext_resource type="Texture2D" uid="uid://b2w7aq4xmagem" path="res://Bilder/Projekt Klavierspiel/Aussehen/Aussehen Klavier.png" id="2_b1k8e"]
@@ -46,6 +46,7 @@
 [ext_resource type="Texture2D" uid="uid://dhf46hekxmwcd" path="res://Bilder/Klavier/KlaviertasteLinks11.png" id="21_dly76"]
 [ext_resource type="Texture2D" uid="uid://b0gxqe83v0v62" path="res://Bilder/Projekt Klavierspiel/Noten/NotenzettelLinks8.png" id="21_u28sm"]
 [ext_resource type="Texture2D" uid="uid://h7wqgxurh7ip" path="res://Bilder/Klavier/KlaviertasteLinks12.png" id="22_3xo43"]
+[ext_resource type="Texture2D" uid="uid://b5wehg5t4kgw0" path="res://Bilder/Klavier/KlaviertasteLinks10.png" id="22_fqyit"]
 [ext_resource type="Texture2D" uid="uid://bdi5eqnguspeo" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts9.png" id="23_wpcrd"]
 [ext_resource type="Texture2D" uid="uid://cfd83shj0083j" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts8.png" id="24_700ox"]
 [ext_resource type="Texture2D" uid="uid://b2qkajpm3ngnn" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts6.png" id="25_epcil"]
@@ -56,6 +57,7 @@
 [ext_resource type="Texture2D" uid="uid://hm6xueil3x06" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts2.png" id="29_0nj5i"]
 [ext_resource type="Texture2D" uid="uid://8cfme10ihqra" path="res://Bilder/Klavier/Klaviertasten Schwarz/KlaviertastenSchwarzRechts1.png" id="30_yhcxp"]
 [ext_resource type="Texture2D" uid="uid://buoteby2kjmde" path="res://Bilder/EulenNeutral.png" id="33_36xd1"]
+[ext_resource type="AudioStream" uid="uid://btftdpqa5v8oa" path="res://Sound/C5 right one.wav" id="42_fqyit"]
 [ext_resource type="Texture2D" uid="uid://dtwo4ymiq1x1v" path="res://Bilder/Icon/IconStartseite.png" id="57_pynum"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kflrw"]
@@ -211,6 +213,28 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yt2ek"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bffn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgs5a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwyji"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1i62"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p2pnh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e02dg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wod1e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85ww2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v1jky"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_evipb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mwpx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vos7u"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5y0w0"]
 
@@ -370,7 +394,7 @@ texture = ExtResource("21_dly76")
 z_index = -2
 position = Vector2(356.446, -104.46)
 scale = Vector2(1.78041, 0.967001)
-texture = ExtResource("21_dly76")
+texture = ExtResource("22_fqyit")
 
 [node name="Sprote3" type="Sprite2D" parent="keyboard"]
 z_index = -1
@@ -467,6 +491,8 @@ offset_left = 136.0
 offset_top = 430.88
 offset_right = 233.0
 offset_bottom = 553.64
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 64
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kflrw")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_c7ebx")
@@ -490,6 +516,8 @@ offset_left = 279.0
 offset_top = 381.0
 offset_right = 364.0
 offset_bottom = 526.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_7j04x")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_axb40")
@@ -513,6 +541,8 @@ offset_left = 370.0
 offset_top = 390.0
 offset_right = 465.0
 offset_bottom = 516.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_1t8n1")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_gfc2l")
@@ -536,6 +566,8 @@ offset_left = 474.0
 offset_top = 391.0
 offset_right = 572.0
 offset_bottom = 524.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_rckcb")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_j5pkl")
@@ -559,6 +591,8 @@ offset_left = 585.0
 offset_top = 394.0
 offset_right = 680.0
 offset_bottom = 520.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_i4mhk")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3t5ys")
@@ -584,6 +618,8 @@ offset_left = 687.0
 offset_top = 387.0
 offset_right = 793.0
 offset_bottom = 516.92
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 theme_override_styles/focus = SubResource("StyleBoxEmpty_be8bf")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_34jjj")
@@ -600,6 +636,56 @@ text = "A"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
 stream = ExtResource("11_tsynp")
+
+[node name="Key_B" type="Button" parent="."]
+layout_mode = 0
+offset_left = 794.0
+offset_top = 394.0
+offset_right = 886.0
+offset_bottom = 518.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_eksr2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_04ht6")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x7c8y")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_0jtle")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_k23mx")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_d7h2y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n6tjr")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_1qu4i")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rmo0w")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yt2ek")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6bffn")
+text = "H"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+stream = ExtResource("28_ehj6p")
+
+[node name="Key_C5" type="Button" parent="."]
+offset_left = 892.0
+offset_top = 380.0
+offset_right = 990.0
+offset_bottom = 526.0
+theme_override_colors/font_hover_color = Color(0.983333, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 65
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vgs5a")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_uwyji")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t1i62")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_p2pnh")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_e02dg")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_wod1e")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_85ww2")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_v1jky")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_evipb")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_5mwpx")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_vos7u")
+text = "C5
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_C5"]
+stream = ExtResource("42_fqyit")
 
 [node name="NotentafelNote8" type="Sprite2D" parent="."]
 visible = false
@@ -649,9 +735,8 @@ scale = Vector2(0.296189, 0.383882)
 texture = ExtResource("17_u6hdr")
 
 [node name="NotentafelNote9" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(768, 71.4375)
-scale = Vector2(0.310811, 0.297238)
+position = Vector2(853, 74)
+scale = Vector2(0.389639, 0.398619)
 texture = ExtResource("18_4yks2")
 
 [node name="NotenzettelLinks1" type="Sprite2D" parent="."]
@@ -704,47 +789,24 @@ texture = ExtResource("21_u28sm")
 
 [node name="TextureRect4" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 768.0
-offset_top = -13.0
-offset_right = 1069.0
-offset_bottom = 151.0
+offset_left = 846.0
+offset_top = -19.0
+offset_right = 1147.0
+offset_bottom = 145.0
 texture = ExtResource("13_anfm4")
 expand_mode = 1
 
 [node name="Sprechblase" type="Label" parent="."]
 layout_mode = 0
-offset_left = 851.0
-offset_top = 29.0
-offset_right = 999.0
-offset_bottom = 99.0
+offset_left = 922.0
+offset_top = 21.0
+offset_right = 1070.0
+offset_bottom = 91.0
 theme_override_colors/font_color = Color(0.027451, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 horizontal_alignment = 3
 vertical_alignment = 1
 autowrap_mode = 3
-
-[node name="Key_B" type="Button" parent="."]
-layout_mode = 0
-offset_left = 794.0
-offset_top = 394.0
-offset_right = 886.0
-offset_bottom = 518.0
-theme_override_font_sizes/font_size = 65
-theme_override_styles/focus = SubResource("StyleBoxEmpty_eksr2")
-theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_04ht6")
-theme_override_styles/disabled = SubResource("StyleBoxEmpty_x7c8y")
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_0jtle")
-theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_k23mx")
-theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_d7h2y")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_n6tjr")
-theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_1qu4i")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_rmo0w")
-theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_yt2ek")
-theme_override_styles/normal = SubResource("StyleBoxEmpty_6bffn")
-text = "B"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
-stream = ExtResource("28_ehj6p")
 
 [node name="ZurueckButton" type="Button" parent="."]
 layout_mode = 0
