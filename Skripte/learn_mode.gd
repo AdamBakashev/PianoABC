@@ -10,8 +10,8 @@ func _on_learn_mode_pressed():
 
 func _ready():
 	$VBoxContainer/Button.connect("pressed", Callable(self, "_on_entchen_pressed"))
-	$VBoxContainer/Button2.connect("pressed", Callable(self, "_on_jakob_pressed"))
-	$VBoxContainer/Button3.connect("pressed", Callable(self, "_on_birthday_pressed"))
+	$VBoxContainer/Button2.connect("pressed", Callable(self, "_on_jingle_pressed"))
+	$VBoxContainer/Button3.connect("pressed", Callable(self, "_on_fuchs_pressed"))
 	$VBoxContainer/Button4.connect("pressed", Callable(self, "_on_haenschen_pressed"))
 	$VBoxContainer/Button5.connect("pressed", Callable(self, "_on_twinkle_pressed"))
 	$ZurückZumHauptmenü.connect("pressed", Callable(self, "_on_back_pressed"))
@@ -22,11 +22,11 @@ func _ready():
 func _on_entchen_pressed():
 	get_tree().change_scene_to_file("res://Songs/AlleMeineEntchen.tscn")
 
-func _on_jakob_pressed():
-	get_tree().change_scene_to_file("res://Songs/BruderJakob.tscn")
+func _on_jingle_pressed():
+	get_tree().change_scene_to_file("res://Songs/JingleBells.tscn")
 
-func _on_birthday_pressed():
-	get_tree().change_scene_to_file("res://Songs/HappyBirthday.tscn")
+func _on_fuchs_pressed():
+	get_tree().change_scene_to_file("res://Songs/FuchsGans.tscn")
 
 func _on_haenschen_pressed():
 	get_tree().change_scene_to_file("res://Songs/HaenschenKlein.tscn")

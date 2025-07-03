@@ -622,7 +622,7 @@ text = "A"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_A"]
 stream = ExtResource("5_3fda3")
 
-[node name="Key_B" type="Button" parent="."]
+[node name="Key_H" type="Button" parent="."]
 layout_mode = 0
 offset_left = 1552.0
 offset_top = 434.0
@@ -644,7 +644,7 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_0o26u")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_kd4sc")
 text = "H"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_B"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Key_H"]
 stream = ExtResource("6_5o2dv")
 
 [node name="Key_C5" type="Button" parent="."]

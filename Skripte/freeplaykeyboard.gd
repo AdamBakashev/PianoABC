@@ -7,7 +7,7 @@ extends Control
 	"Key_F": $Key_F/AudioStreamPlayer,
 	"Key_G": $Key_G/AudioStreamPlayer,
 	"Key_A": $Key_A/AudioStreamPlayer,
-	"Key_B": $Key_B/AudioStreamPlayer,
+	"Key_H": $Key_H/AudioStreamPlayer,
 	"Key_C5": $Key_C5/AudioStreamPlayer,
 }
 
@@ -27,6 +27,31 @@ func _on_key_pressed(key_name):
 	if player.playing:
 		player.stop()
 	player.play()
+	
+	var button = get_node(key_name)
+	_change_button_font_color(button, true)
+	
+	await get_tree().create_timer(0.15).timeout
+	_change_button_font_color(button, false)
+
+func _input(event):
+	for action_name in key_notes.keys():
+		if Input.is_action_just_pressed(action_name):
+			var player = key_notes[action_name]
+			if player.playing:
+				player.stop()
+			player.play()
+			
+			var button = get_node(action_name)
+			_change_button_font_color(button, true)
+				
+			await get_tree().create_timer(0.15).timeout
+			_change_button_font_color(button, false)
+func _change_button_font_color(button: Button, pressed: bool) -> void:
+	if pressed:
+		button.add_theme_color_override("font_color", Color.BLACK)
+	else:
+		button.remove_theme_color_override("font_color")
 
 func _on_zurueck_pressed():
 	get_tree().change_scene_to_file("res://FreePlay.tscn")

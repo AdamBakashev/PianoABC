@@ -35,7 +35,7 @@ func _ready():
 		var button = get_node("Key_" + note)
 		button.pressed.connect(_on_key_pressed.bind(note))
 		button.focus_mode = Control.FOCUS_NONE
-
+		
 	update_level_label()
 	start_level()
 	
@@ -75,7 +75,7 @@ func play_song_intro():
 func _on_key_pressed(note: String):
 	if not player_input_enabled:
 		return
-
+		 
 	var expected_note = song[current_note_index]
 
 	if note != expected_note:
@@ -99,6 +99,15 @@ func _on_key_pressed(note: String):
 			sprechblase.text = "✅Richtig! Weiter zu Level %d" % (current_level + 1)
 			await get_tree().create_timer(2.0).timeout
 			start_level()
+	
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		for note in key_notes.keys():
+			var action_name = "Key_" + note
+			if Input.is_action_just_pressed(action_name):
+				_on_key_pressed(note)
+
 
 func highlight_button(button):
 	button.add_theme_color_override("button_color", Color(1, 1, 0.3))

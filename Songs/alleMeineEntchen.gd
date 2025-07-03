@@ -7,7 +7,7 @@ extends Control
 	"Key_F": $Key_F/AudioStreamPlayer,
 	"Key_G": $Key_G/AudioStreamPlayer,
 	"Key_A": $Key_A/AudioStreamPlayer,
-	"Key_B": $Key_B/AudioStreamPlayer,
+	"Key_H": $Key_H/AudioStreamPlayer,
 	"Key_C5": $Key_C5/AudioStreamPlayer,
 }
 
@@ -37,6 +37,14 @@ func _ready():
 	if MenuMusic.music_player.playing:
 		MenuMusic.music_player.stop()
 
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		for key_name in key_notes.keys():
+			if Input.is_action_just_pressed(key_name):
+				print("Input action pressed: ", key_name)
+				_on_key_pressed(key_name)
+
+
 func _on_key_pressed(key_name):
 	var expected_note = song_notes[current_note_index]
 	var pressed_note = key_name.replace("Key_", "")
@@ -52,6 +60,7 @@ func _on_key_pressed(key_name):
 			show_congratulations()
 			current_note_index = 0
 	_update_highlighted_key()
+	
 
 func _update_highlighted_key():
 	for key in key_notes.keys():
